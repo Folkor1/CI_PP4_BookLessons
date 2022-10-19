@@ -145,5 +145,12 @@ $(document).ready(function() {
     getTime();
     });
 
+    // Confirmation message - back button
+    $('#back-to-selection').on("click", function() {
+    $('#confirm-message').addClass('d-none');
+    $('#calendar').removeClass('d-none');
+    $('#select-date').removeClass('d-none');
+    $('#book-for').removeClass('d-none');
+    });
 
 });
