@@ -133,5 +133,17 @@ $(document).ready(function() {
         document.getElementById('time_inp').value = time[0];
     };
 
+    // Booking confirmation message
+    $('#book-confirm').on("click", function() {
+    $('#confirm-message').removeClass('d-none');
+    $('#calendar').addClass('d-none');
+    $('#select-date').addClass('d-none');
+    $('#book-for').addClass('d-none');
+    getLesson();
+    getLessonType();
+    getDate();
+    getTime();
+    });
+
 
 });
