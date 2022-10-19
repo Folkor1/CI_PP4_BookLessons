@@ -97,3 +97,14 @@ body {
   #location {
     margin-top: 70px;
   }
+
+/* Bookings page */
+
+.btn {
+    border-radius: 3px;
+  }
+  
+  #select-lesson {
+    position: absolute;
+    left: 0;
+  }
