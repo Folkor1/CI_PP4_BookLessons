@@ -4,6 +4,8 @@ $(document).ready(function() {
     let onlineorOffline = document.getElementById("online-or-offline");
 
     let booking = [];
+    let date = [];
+    let time = [];
 
     // Change lesson type options when clicked
     $("#piano-btn").on("click", function() {
@@ -98,5 +100,12 @@ $(document).ready(function() {
           $("div#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
         });
       });
+
+    // Get date from the calendar
+    $('#date').datepicker().on('changeDate', function (selectedDate) {
+        date.splice(0);
+        selectedDate = selectedDate.date.toLocaleDateString('en-CA');
+        date.push(selectedDate);
+        });
 
 });
