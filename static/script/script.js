@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     let pianoOrTheory = document.getElementById("piano-or-theory");
+    let onlineorOffline = document.getElementById("online-or-offline");
 
     let booking = [];
 
@@ -32,6 +33,7 @@ $(document).ready(function() {
         $("#calendar").removeClass("d-none");
         $('#online').removeClass("d-none");
         booking.push('Online');
+        onlineorOffline.innerText = booking[1];
     });
 
     $("#offline-btn").on("click", function() {
@@ -41,6 +43,7 @@ $(document).ready(function() {
         $("#calendar").removeClass("d-none");
         $('#offline').removeClass("d-none");
         booking.push('Offline');
+        onlineorOffline.innerText = booking[1];
     });
 
     // Back to lesson selection
