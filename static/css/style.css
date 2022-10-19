@@ -64,3 +64,17 @@ body {
     font-size: 20px;
     font-weight: 600;
   }
+
+  #working-days > ul, #working-hours, #working-hours-heading, #home-text {
+    list-style-type: none;
+    font-weight: 600;
+  }
+  
+  #working-days > ul > li, #working-hours > ul > li {
+    padding: 4px;
+  }
+  
+  #home-text {
+    font-size: 20px;
+    font-family: Merriweather Sans, sans-serif;
+  }
