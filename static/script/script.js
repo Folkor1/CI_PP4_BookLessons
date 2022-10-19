@@ -117,4 +117,9 @@ $(document).ready(function() {
         document.getElementById('lesson_inp').value = booking[0];
       };
 
+      function getLessonType() {
+        lessonType.innerText = booking[1];
+        document.getElementById('lesson_type_inp').value = booking[1];
+      };
+
 });
