@@ -122,4 +122,10 @@ $(document).ready(function() {
         document.getElementById('lesson_type_inp').value = booking[1];
       };
 
+      function getDate() {
+        selectDate.innerText = date[0];
+        document.getElementById('date_inp').value = date[0];
+      };
+
+
 });
