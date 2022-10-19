@@ -4,11 +4,11 @@ body {
     flex-direction: column;
     background-color: #ececec;
     font-family: Comfortaa, sans-serif;
-  }
+}
   
-  main {
+main {
     flex: 1 0 auto;
-  }
+}
 
 /* Navigation */
 
@@ -49,12 +49,12 @@ body {
     opacity: 0.8;
   }
   
-  #pic-frame {
+#pic-frame {
     margin-top: 15px;
     height: 800x;
     width: 1200x;
     border: 1px solid #1c1b1a;
-  }
+}
 
 /* Contact information */
 
@@ -63,83 +63,83 @@ body {
     margin-right: 20px;
     font-size: 20px;
     font-weight: 600;
-  }
+}
 
-  #working-days > ul, #working-hours, #working-hours-heading, #home-text {
+#working-days > ul, #working-hours, #working-hours-heading, #home-text {
     list-style-type: none;
     font-weight: 600;
-  }
+}
   
-  #working-days > ul > li, #working-hours > ul > li {
+#working-days > ul > li, #working-hours > ul > li {
     padding: 4px;
-  }
+}
   
-  #home-text {
+#home-text {
     font-size: 20px;
     font-family: Merriweather Sans, sans-serif;
-  }
+}
 
-  #book-button {
+#book-button {
     padding: 4px 58px;
     background-color: #FCF8FF;
-  }
+}
   
-  #book-button:hover {
+#book-button:hover {
     background-color: #1c1b1a;
     color: #FCF8FF;
-  }
+}
 
-  #stamps {
+#stamps {
     margin-top: 80px;
     margin-bottom: 50px;
-  }
+}
   
-  #location {
+#location {
     margin-top: 70px;
-  }
+}
 
 /* Bookings page */
 
 .btn {
     border-radius: 3px;
-  }
+}
   
-  #select-lesson {
+#select-lesson {
     position: absolute;
     left: 0;
-  }
+}
 
-  #selection {
+#selection {
     margin: 100px 0 0 600px;
     height: 580px;
-  }
+}
   
-  .lesson-button {
+.lesson-button {
     height: 80px;
     width: 130px;
     background-color: #FCF8FF;
-  }
+}
   
-  #manage-bookings, #manage, #success-manage-bookings {
+#manage-bookings, #manage, #success-manage-bookings {
     background-color: #FCF8FF;
     padding: 5px 50px 5px 50px;
-  }
+}
 
-  #date, #speed, #book-confirm, #confirm-message, #change-date, #change-type, #cancel, #edit-book-confirm, #edit-date-form, #edit-lesson-type, #cancel-lesson, #signup, #signin, #signout-confirm, #reset {
+#date, #speed, #book-confirm, #confirm-message, #change-date, #change-type, #cancel, #edit-book-confirm, #edit-date-form, #edit-lesson-type, #cancel-lesson, #signup, #signin, #signout-confirm, #reset {
     background-color: #FCF8FF;
     border-radius: 3px;
-  }
+}
 
-  #speed {
+#speed {
     height: 40px;
     width: 220px;
     appearance: none;
-  }
+}
 
-  #book-confirm, #edit-book-confirm {
+#book-confirm, #edit-book-confirm {
     padding: 20px 30px;
     width: 220px;
-  }
+}
 
 /* Pop-up on hover window */
 
@@ -151,4 +151,4 @@ body {
     background: #FCF8FF;
     border: 1px solid #1c1b1a;
     border-radius: 3px;
-  }
+}
