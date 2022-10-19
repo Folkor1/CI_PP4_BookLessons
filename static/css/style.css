@@ -160,11 +160,6 @@ main {
     bottom: 0px;
     left: 80px;
 }
-  
-#contacts-font, #upc-book, #pop-up, #upc-manage-book {
-    font-family: Merriweather Sans, sans-serif;
-    font-size: 90%;
-}
 
 /* Pop-up on hover window */
 
