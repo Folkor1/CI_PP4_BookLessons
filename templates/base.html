@@ -3,6 +3,7 @@
 {% url 'account_login' as account_login %}
 {% url 'account_signup' as account_signup %}
 {% url 'account_logout' as account_logout %}
+{% url 'bookings' as bookings %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +39,7 @@
                 <a class="nav-link" aria-current="page" href="#">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">BOOKINGS</a>
+                <a class="nav-link {% if request.path == bookings %} active {% endif %}" aria-current="page" href="{% url 'bookings' %}">BOOKINGS</a>
                 </li>
                 {% if user.is_authenticated %}
                 <li class="nav-item">
