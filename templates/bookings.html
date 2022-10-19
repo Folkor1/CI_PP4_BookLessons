@@ -84,8 +84,35 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
+    
+            <!-- My upcoming bookings  -->
+            <div class="col-3">
+                <div class="text-center">
+                    <p class="text-center h5">
+                        {% for booking in bookings_list|slice:":1" %}
+                            {% if booking.status %}
+                                My upcoming bookings:
+                            {% else %}
+                                You currently don't have upcoming lessons.
+                            {% endif %}
+                        {% endfor %}
+                    </p>
+                    <div class="mt-4">
 
+                        {% for booking in bookings_list %}
+                            {% if booking.status %}
+
+                                <p id="upc-book">{{ booking.lesson }} {{ booking.lesson_type }} | {{ booking.date }}</p>
+                            
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                    <button type="button" class="btn btn-outline-dark ms-auto" id="manage-bookings"><a class="text-reset text-decoration-none h6"  href="{% url 'manage_bookings' %}">Manage bookings</a></button>
+                </div>
+            </div>
+        </div>
 
         <!-- Pop-up on hover div -->
         <div id="pop-up">
