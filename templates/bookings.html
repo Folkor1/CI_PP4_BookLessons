@@ -92,7 +92,27 @@
                 <input type='hidden' name='lesson_inp' id='lesson_inp' value=''>
                 <input type='hidden' name='lesson_type_inp' id='lesson_type_inp' value=''>
                 <input type='hidden' name='date_inp' id='date_inp' value=''>
-                <input type='hidden' name='time_inp' id='time_inp' value=''>            
+                <input type='hidden' name='time_inp' id='time_inp' value=''>
+                <div class="row d-none border border-dark d-flex justify-content-around ms-5" id="confirm-message">
+                    <div>
+                        <p class="mt-3 h4 mb-0 text-center">This is booking for</p>
+                    </div>
+                    <div class="row d-flex justify-content-center confirmation-div">
+                        <span class="h5 text-end p-0 me-2" id="lesson-confirmation" name="lesson"></span>
+                        <span class="h5 text-start p-0" id="lesson-type-confirmation" name="lesson_type"></span>
+                    </div>
+                    <div class="row d-flex justify-content-center confirmation-div">
+                        <span class="h5 text-end p-0 me-3" id="date-confirmation" name="date"></span>
+                        <span class="h5 text-start p-0" id="time-confirmation" date="time"></span>
+                    </div>
+                    <div class="col-5 d-flex justify-content-center">
+                        <button type="submit" class="btn text-center border border-dark bg-secondary bg-opacity-25" id="confirm"><i class="fa-solid fa-check fa-fw"></i>Confirm</button>
+                    </div>
+                    <div class="col-5 d-flex justify-content-center">
+                        <button type="button" class="btn text-center border border-dark bg-secondary bg-opacity-25" id="back-to-selection"><i class="fa-solid fa-arrow-left fa-fw"></i>Back</button>
+                    </div>
+                </div>
+            </form>
 
             <!-- Contacts  -->
             <div class="d-flex justify-content-center mt-5">       
