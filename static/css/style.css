@@ -107,6 +107,10 @@ main {
 .day {
     font-weight: 900;
 }
+
+#info-icon {
+    font-size: 80%;
+}
   
 #select-lesson {
     position: absolute;
