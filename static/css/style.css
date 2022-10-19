@@ -78,3 +78,13 @@ body {
     font-size: 20px;
     font-family: Merriweather Sans, sans-serif;
   }
+
+  #book-button {
+    padding: 4px 58px;
+    background-color: #FCF8FF;
+  }
+  
+  #book-button:hover {
+    background-color: #1c1b1a;
+    color: #FCF8FF;
+  }
