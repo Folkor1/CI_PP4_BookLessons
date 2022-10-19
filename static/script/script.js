@@ -2,7 +2,10 @@ $(document).ready(function() {
 
     let pianoOrTheory = document.getElementById("piano-or-theory");
     let onlineorOffline = document.getElementById("online-or-offline");
-
+    let lesson = document.getElementById("lesson-confirmation");
+    let lessonType = document.getElementById("lesson-type-confirmation");
+    let selectDate = document.getElementById("date-confirmation");
+    let selectTime = document.getElementById("time-confirmation");
     let booking = [];
     let date = [];
     let time = [];
@@ -107,5 +110,11 @@ $(document).ready(function() {
         selectedDate = selectedDate.date.toLocaleDateString('en-CA');
         date.push(selectedDate);
         });
+    
+      // Get selections lesson types from booking menus
+      function getLesson() {
+        lesson.innerText = booking[0];
+        document.getElementById('lesson_inp').value = booking[0];
+      };
 
 });
