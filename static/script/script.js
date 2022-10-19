@@ -75,5 +75,12 @@ $(document).ready(function() {
     $('#time-picker').removeClass('d-none');
     });
 
+    // Display Book button once time is selected
+    $('#time-picker').change(function() {
+    $('#book-div').removeClass('d-none');
+    time.splice(0);
+    var selectedTime = $("#time-picker option:selected").text();
+    time.push(selectedTime);
+    });
 
 });

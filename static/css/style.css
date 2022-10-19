@@ -129,4 +129,9 @@ body {
     background-color: #FCF8FF;
     border-radius: 3px;
   }
-  
+
+  #speed {
+    height: 40px;
+    width: 220px;
+    appearance: none;
+  }
