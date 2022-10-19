@@ -153,4 +153,11 @@ $(document).ready(function() {
     $('#book-for').removeClass('d-none');
     });
 
+    // Timeout for alert messages
+    setTimeout(function () {
+        let messages = document.getElementById('msg');
+        let alert = new bootstrap.Alert(messages);
+        alert.close();
+    }, 2500);
+
 });
