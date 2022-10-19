@@ -172,3 +172,10 @@ main {
     border: 1px solid #1c1b1a;
     border-radius: 3px;
 }
+
+/* Booking confirm message */
+
+#confirm-message, #edit-date-form, #edit-lesson-type, #cancel-lesson {
+    height: 220px;
+    width: 500px;
+}
