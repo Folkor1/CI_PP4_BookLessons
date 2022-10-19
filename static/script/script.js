@@ -55,6 +55,20 @@ $(document).ready(function() {
         $("#piano").addClass("d-none");
         $("#theory").addClass("d-none");
         booking.splice(booking.indexOf('Piano', 'Theory'),1);
+        onlineorOffline.innerText = "";
     });
+
+    // Back to lesson type selection
+    $("#back-lesson-type").on("click", function() {
+        $("#calendar").addClass("d-none");
+        $("#select-lesson-type").removeClass("d-none");
+        $("#select-date").addClass("d-none");
+        $("#oo-buttons").removeClass("d-none");
+        $('#online').addClass("d-none");
+        $('#offline').addClass("d-none");
+        booking.splice(booking.indexOf('Online', 'Offline'),1);
+        onlineorOffline.innerText = "";
+    });
+
 
 });
