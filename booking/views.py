@@ -2,6 +2,7 @@ from django.shortcuts import render, reverse
 from django.views import generic
 from .models import Bookings
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 
 
 def homepage(request):
@@ -31,4 +32,5 @@ class BookingsView(generic.ListView):
             student = request.user
             booking = Bookings(lesson=lesson, lesson_type=lesson_type, date=date, time=time, status=status, student=student)
             booking.save()
+            messages.success(request, 'Booking successfully added.')
             return HttpResponseRedirect(reverse('bookings'))
