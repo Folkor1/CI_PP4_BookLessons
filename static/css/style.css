@@ -183,7 +183,7 @@ main {
 #lesson-confirmation, #lesson-type-confirmation {
     font-family: Merriweather Sans, sans-serif;
     width: 90px;
-  }
+}
 
 .confirmation-div {
     height: 30px;
@@ -192,4 +192,12 @@ main {
 #date-confirmation, #time-confirmation, #edit-date-date, #edit-time {
     font-family: Merriweather Sans, sans-serif;
     width: 200px;
+}
+
+#back-to-selection, #confirm, #edit-date-confirm, #edit-date-back-to-selection, #edit-lesson-type-confirm, #edit-lesson-type-back-to-selection, #cancel-lesson-confirm, #cancel-lesson-back-to-selection {
+    margin-top: 20px;
+    bottom: 0;
+    height: 50px;
+    width: 150px;
+    background-color: #ececec;
 }
