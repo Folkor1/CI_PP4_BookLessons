@@ -83,4 +83,20 @@ $(document).ready(function() {
     time.push(selectedTime);
     });
 
+    // Pop-up on hover window
+    $(function() {
+        var moveLeft = 20;
+        var moveDown = 10;
+     
+        $('a.trigger').hover(function() {
+          $('div#pop-up').show();
+        }, function() {
+          $('div#pop-up').hide();
+        });
+     
+        $('a.trigger').mousemove(function(e) {
+          $("div#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
+        });
+      });
+
 });
