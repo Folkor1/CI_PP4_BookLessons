@@ -151,7 +151,7 @@ main {
     padding: 5px 50px 5px 50px;
 }
   
-  #manage-bookings:hover, #manage:hover, #change-date:hover, #change-type:hover, #cancel:hover, #success-manage-bookings:hover {
+#manage-bookings:hover, #manage:hover, #change-date:hover, #change-type:hover, #cancel:hover, #success-manage-bookings:hover {
     background-color: #1c1b1a;
 }
 
@@ -161,7 +161,7 @@ main {
     left: 80px;
 }
   
-  #contacts-font, #upc-book, #pop-up, #upc-manage-book {
+#contacts-font, #upc-book, #pop-up, #upc-manage-book {
     font-family: Merriweather Sans, sans-serif;
     font-size: 90%;
 }
