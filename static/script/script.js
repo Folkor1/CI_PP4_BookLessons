@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    let pianoOrTheory = document.getElementById("piano-or-theory");
+
     let booking = [];
 
     // Change lesson type options when clicked
@@ -9,6 +11,7 @@ $(document).ready(function() {
         $("#select-lesson-type").removeClass("d-none");
         $("#oo-buttons").removeClass("d-none");
         booking.push('Piano');
+        pianoOrTheory.innerText = booking[0];
     });
 
     $("#theory-btn").on("click", function() {
@@ -18,6 +21,7 @@ $(document).ready(function() {
         $("#oo-buttons").removeClass("d-none");
         $("#theory").removeClass("d-none");
         booking.push('Theory');
+        pianoOrTheory.innerText = booking[0];
     });
 
     // Change online/offline options when clicked
