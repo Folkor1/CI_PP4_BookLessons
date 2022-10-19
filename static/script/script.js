@@ -30,4 +30,13 @@ $(document).ready(function() {
         booking.push('Online');
     });
 
+    $("#offline-btn").on("click", function() {
+        $("#select-lesson-type").addClass("d-none");
+        $("#oo-buttons").addClass("d-none");
+        $("#select-date").removeClass("d-none");
+        $("#calendar").removeClass("d-none");
+        $('#offline').removeClass("d-none");
+        booking.push('Offline');
+    });
+
 });
