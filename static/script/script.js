@@ -70,5 +70,10 @@ $(document).ready(function() {
         onlineorOffline.innerText = "";
     });
 
+    // Display time picker once date is selected
+    $('#date').datepicker().on('changeDate', function() {
+    $('#time-picker').removeClass('d-none');
+    });
+
 
 });
