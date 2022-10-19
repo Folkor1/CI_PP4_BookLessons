@@ -103,6 +103,10 @@ main {
 .btn {
     border-radius: 3px;
 }
+
+.day {
+    font-weight: 900;
+}
   
 #select-lesson {
     position: absolute;
