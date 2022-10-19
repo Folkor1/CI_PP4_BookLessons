@@ -88,3 +88,12 @@ body {
     background-color: #1c1b1a;
     color: #FCF8FF;
   }
+
+  #stamps {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  
+  #location {
+    margin-top: 70px;
+  }
