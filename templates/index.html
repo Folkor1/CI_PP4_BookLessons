@@ -1,12 +1,13 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 
 <!-- Home page picture container -->
-<div id="pic-frame">
-    <div id="home-page-pic">
-        <img src = "#" alt ='Piano Pic' class = "img-fluid">
+    <div id="pic-frame">
+        <div id="home-page-pic">
+            <img src = "{% static 'images/piano1.jpg' %}" alt ='Piano Pic' class = "img-fluid">
+        </div>
     </div>
-</div>
 
 {%endblock%}

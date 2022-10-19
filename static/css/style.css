@@ -41,3 +41,17 @@ body {
   color: #FCF8FF;
   border-radius: 3px;
 }
+
+/* Home page picture */
+
+#home-page-pic {
+    padding: 3px;
+    opacity: 0.8;
+  }
+  
+  #pic-frame {
+    margin-top: 15px;
+    height: 800x;
+    width: 1200x;
+    border: 1px solid #1c1b1a;
+  }
