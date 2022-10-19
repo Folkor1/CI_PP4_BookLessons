@@ -111,21 +111,27 @@ $(document).ready(function() {
         date.push(selectedDate);
         });
     
-      // Get selections lesson types from booking menus
+    // Get selections lesson types from booking menus
       function getLesson() {
         lesson.innerText = booking[0];
         document.getElementById('lesson_inp').value = booking[0];
-      };
+    };
 
-      function getLessonType() {
+    function getLessonType() {
         lessonType.innerText = booking[1];
         document.getElementById('lesson_type_inp').value = booking[1];
-      };
+    };
 
-      function getDate() {
+    function getDate() {
         selectDate.innerText = date[0];
         document.getElementById('date_inp').value = date[0];
-      };
+    };
+
+    // Get time from time picker
+    function getTime() {
+        selectTime.innerText = time[0];
+        document.getElementById('time_inp').value = time[0];
+    };
 
 
 });
