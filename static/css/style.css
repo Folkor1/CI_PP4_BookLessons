@@ -55,3 +55,12 @@ body {
     width: 1200x;
     border: 1px solid #1c1b1a;
   }
+
+  /* Contact information */
+
+.contact-list {
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
