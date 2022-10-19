@@ -20,4 +20,14 @@ $(document).ready(function() {
         booking.push('Theory');
     });
 
+    // Change online/offline options when clicked
+    $("#online-btn").on("click", function() {
+        $("#select-lesson-type").addClass("d-none");
+        $("#oo-buttons").addClass("d-none");
+        $("#select-date").removeClass("d-none");
+        $("#calendar").removeClass("d-none");
+        $('#online').removeClass("d-none");
+        booking.push('Online');
+    });
+
 });
