@@ -108,3 +108,19 @@ body {
     position: absolute;
     left: 0;
   }
+
+  #selection {
+    margin: 100px 0 0 600px;
+    height: 580px;
+  }
+  
+  .lesson-button {
+    height: 80px;
+    width: 130px;
+    background-color: #FCF8FF;
+  }
+  
+  #manage-bookings, #manage, #success-manage-bookings {
+    background-color: #FCF8FF;
+    padding: 5px 50px 5px 50px;
+  }
