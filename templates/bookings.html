@@ -85,6 +85,15 @@
                 </div>
             </div>
 
+
+            <!-- Book confirmation message -->
+            <form method="POST">
+                {% csrf_token %}
+                <input type='hidden' name='lesson_inp' id='lesson_inp' value=''>
+                <input type='hidden' name='lesson_type_inp' id='lesson_type_inp' value=''>
+                <input type='hidden' name='date_inp' id='date_inp' value=''>
+                <input type='hidden' name='time_inp' id='time_inp' value=''>            
+
             <!-- Contacts  -->
             <div class="d-flex justify-content-center mt-5">       
                 <div id="contacts">
