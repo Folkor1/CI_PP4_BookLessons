@@ -135,3 +135,8 @@ body {
     width: 220px;
     appearance: none;
   }
+
+  #book-confirm, #edit-book-confirm {
+    padding: 20px 30px;
+    width: 220px;
+  }
