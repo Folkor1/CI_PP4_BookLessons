@@ -57,6 +57,15 @@
         </div>
     </nav>
 
+    {% if user.is_authenticated %}
+    <div class="row position-absolute top-0 end-0 text-info mt-3 me-3 w-auto h6">
+      <p class="w-auto p-0">Logged in as&nbsp;</p> 
+      <p class="w-auto p-0">
+        {{ user.username }}
+      </p>
+    </div>
+    {% endif %}
+
     <main class="container">
         {% block content %}
     
