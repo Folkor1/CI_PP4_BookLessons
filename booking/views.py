@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
+from .models import Bookings
 
 
 def homepage(request):
@@ -13,4 +14,5 @@ class BookingsView(generic.ListView):
     """
     Render bookings page
     """
+    model = Bookings
     template_name = "bookings.html"

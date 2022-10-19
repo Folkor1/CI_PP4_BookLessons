@@ -3,4 +3,27 @@
 
 {% block content %}
 
+<!-- Select and book a lesson  -->
+
+{% if user.is_authenticated %}
+
+<div class="container-fluid row mt-5 justify-content-between" id="select-lesson">
+    <div class="col-4" id="selection">
+        <div>
+
+            <!-- Select piano or theory  -->
+            <div class="row d-flex justify-content-center" id="piano-theory">
+                <p class="h3 text-center">Select a lesson</p>
+                <div class="col-3 mt-3">
+                    <button type="button" class="btn btn-outline-dark lesson-button lesson-button" id="piano-btn">Piano</button>
+                </div>
+                <div class="col-3 mt-3">
+                    <button type="button" class="btn btn-outline-dark lesson-button lesson-button" id="theory-btn">Theory</button>
+                </div>
+            </div>
+
+{% else %}
+
+{% endif %}
+
 {%endblock%}
