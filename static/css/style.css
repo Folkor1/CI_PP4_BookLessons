@@ -9,3 +9,35 @@ body {
   main {
     flex: 1 0 auto;
   }
+
+/* Navigation */
+
+.navbar-nav {
+    margin-right: 50px;
+  }
+
+.navbar-nav > li {
+  padding-top: 50px;
+}
+
+#navbar-logo {
+  height: 80px;
+}
+
+.nav-item a {
+  color: #FCF8FF;
+}
+
+.nav-item a:hover {
+  color: #FCF8FF;
+}
+
+.nav-link {
+  padding: 2px;
+}
+
+.navbar-nav .nav-link.active {
+  border: 1px solid #FCF8FF;
+  color: #FCF8FF;
+  border-radius: 3px;
+}
