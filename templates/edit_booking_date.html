@@ -45,6 +45,15 @@
                         <button type="button" class="btn text-center border border-dark" id="edit-book-confirm">Change</button>
                     </div>
 
+                    <!-- Back to lesson type selection  -->
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn text-center mt-5 back-button" id="edit-back-lesson-type"><a class="text-reset text-decoration-none" href="{% url 'manage_bookings' %}"><i class="fa-solid fa-arrow-left fa-fw"></i>Back to Manage booking</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     {% else %}
 
     <!-- Sign up or login message -->
