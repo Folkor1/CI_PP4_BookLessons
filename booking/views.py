@@ -1,4 +1,4 @@
-from django.shortcuts import render, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import generic
 from .models import Bookings
 from django.http import HttpResponseRedirect
