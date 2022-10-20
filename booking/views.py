@@ -33,7 +33,4 @@ class BookingsView(generic.ListView):
             booking = Bookings(lesson=lesson, lesson_type=lesson_type, date=date, time=time, status=status, student=student)
             booking.save()
             messages.success(request, 'Booking successfully added.')
-            context = {
-                "current": Bookings.get_queryset(booking)
-            }
-            return HttpResponseRedirect(reverse('bookings'), context)
+            return HttpResponseRedirect(reverse('bookings'))
