@@ -165,4 +165,12 @@ $(document).ready(function() {
         $('.upc-lessons').text("My upcoming bookings:");
     }
 
+    // Edit date confirmation message
+    $('#edit-book-confirm').on("click", function() {
+    $('#edit-date-time').addClass('d-none');
+    $('#edit-date-form').removeClass('d-none');
+    getDateDate();
+    getDateTime();
+    });
+
 });
