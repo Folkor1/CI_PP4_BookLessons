@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-from datetime import datetime
+from datetime import datetime, date
 
 
 class Bookings(models.Model):
@@ -44,12 +44,6 @@ class Bookings(models.Model):
         Return time
         """
         return self.student
-
-    def get_queryset(self):
-        """
-        Get queryset of current user
-        """
-        return self.student.bookings_set.all()
 
     class Meta:
         ordering = ['-date']
