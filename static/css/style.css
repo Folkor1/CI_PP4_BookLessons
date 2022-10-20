@@ -209,3 +209,9 @@ main {
     width: 150px;
     background-color: #ececec;
 }
+
+.back-button {
+    font-size: 15px;
+    width: 280px;
+    border: none;
+}
