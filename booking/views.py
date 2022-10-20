@@ -43,3 +43,9 @@ class ManageBookingsView(generic.ListView):
     model = Bookings
     template_name = "manage_bookings.html"
 
+
+def edit_booking_date(request, booking_id):
+    """
+    Edit booking date and time
+    """
+    booking = get_object_or_404(Bookings, id=booking_id)
