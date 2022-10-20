@@ -42,3 +42,4 @@ class ManageBookingsView(generic.ListView):
     """
     model = Bookings
     template_name = "manage_bookings.html"
+

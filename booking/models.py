@@ -47,7 +47,7 @@ class Bookings(models.Model):
 
     def get_queryset(self):
         """
-        Get querysents of current user
+        Get queryset of current user
         """
         return self.student.bookings_set.all()
 
