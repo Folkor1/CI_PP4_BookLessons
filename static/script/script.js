@@ -6,6 +6,7 @@ $(document).ready(function() {
     let lessonType = document.getElementById("lesson-type-confirmation");
     let selectDate = document.getElementById("date-confirmation");
     let selectTime = document.getElementById("time-confirmation");
+    let editDateDate = document.getElementById("edit-date-date");
     let booking = [];
     let date = [];
     let time = [];
@@ -178,5 +179,11 @@ $(document).ready(function() {
     $('#edit-date-form').addClass('d-none');
     $('#edit-date-time').removeClass('d-none');
     });
+
+    // Get date from date picker on edit
+    function getDateDate() {
+    editDateDate.innerText = date[0];
+    document.getElementById('edit_date_inp').value = date[0];
+    };
 
 });
