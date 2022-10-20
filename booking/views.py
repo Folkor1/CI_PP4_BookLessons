@@ -1,4 +1,4 @@
-from django.shortcuts import render, reverse
+from django.shortcuts import render, reverse, get_object_or_404
 from django.views import generic
 from .models import Bookings
 from django.http import HttpResponseRedirect
@@ -33,4 +33,7 @@ class BookingsView(generic.ListView):
             booking = Bookings(lesson=lesson, lesson_type=lesson_type, date=date, time=time, status=status, student=student)
             booking.save()
             messages.success(request, 'Booking successfully added.')
-            return HttpResponseRedirect(reverse('bookings'))
+            context = {
+                "current": Bookings.get_queryset(booking)
+            }
+            return HttpResponseRedirect(reverse('bookings'), context)

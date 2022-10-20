@@ -44,7 +44,13 @@ class Bookings(models.Model):
         Return time
         """
         return self.student
-        
+
+    def get_queryset(self):
+        """
+        Get querysents of current user
+        """
+        return self.student.bookings_set.all()
+
     class Meta:
         ordering = ['-date']
         verbose_name = 'Booking'

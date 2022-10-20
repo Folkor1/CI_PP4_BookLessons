@@ -144,10 +144,10 @@
                     </p>
                     <div class="mt-4">
 
-                        {% for booking in bookings_list %}
-                            {% if booking.status %}
+                        {% for current in bookings_list %}
+                            {% if current.student == request.user and current.status == True %}
 
-                                <p id="upc-book">{{ booking.lesson }} {{ booking.lesson_type }} | {{ booking.date }}</p>
+                                <p id="upc-book">{{ current.lesson }} {{ current.lesson_type }} | {{ current.date }}</p>
                             
                             {% endif %}
                         {% endfor %}
