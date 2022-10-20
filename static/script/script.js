@@ -160,4 +160,9 @@ $(document).ready(function() {
         alert.close();
     }, 2500);
 
+    // Display status of bookings
+    if($('#upc-book').is(':contains("|")')) {
+        $('#upc-lessons').text("My upcoming bookings:");
+    }
+
 });
