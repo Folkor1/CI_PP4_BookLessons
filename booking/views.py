@@ -70,6 +70,9 @@ def edit_booking_type(request, booking_id):
     if request.method == 'POST':
         booking.lesson_type = request.POST.get('edit_lesson_type')
         booking.save()
+        messages.success(request, 'Lesson type successfully changed.')
         return redirect('manage_bookings')
-    return render(request, 'edit_booking_type.html')
-    
+    context = {
+        'edit_date_lesson_type': Bookings.get_lesson_type(booking)
+        }
+    return render(request, 'edit_booking_type.html', context)
