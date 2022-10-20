@@ -193,4 +193,13 @@ $(document).ready(function() {
     document.getElementById('edit_time_inp').value = time[0];
     };
 
+    // Get lesson type on edit
+    $('#edit-lesson-type-confirm').on("click", function() {
+    if($("#edit_type_value").is(':contains("Online")')) {
+        editLessonType.value = 'Online'
+    } else {
+        editLessonType.value = 'Offline'
+    }
+    });
+
 });
