@@ -49,3 +49,9 @@ def edit_booking_date(request, booking_id):
     Edit booking date and time
     """
     booking = get_object_or_404(Bookings, id=booking_id)
+    if request.method == 'POST':
+        now = date.today()
+        booking.date = request.POST.get('edit_date_inp')
+        booking.time = request.POST.get('edit_time_inp')
+        booking.save()
+        return redirect('manage_bookings')
