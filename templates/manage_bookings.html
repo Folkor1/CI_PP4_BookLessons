@@ -12,14 +12,18 @@
 
             </p>
             <div class="mt-4">
+                {% for current in bookings_list %}
+                    {% if current.student == request.user and current.status == True %}
 
                     <div class="btn-toolbar d-flex justify-content-center mt-2 mb-2 h4">
-                        <p class="btn-group me-3 mb-0 lh-lg" id="upc-manage-book"></p>
+                        <p class="btn-group me-3 mb-0 lh-lg" id="upc-manage-book"></p>{{ current.lesson }} {{ current.lesson_type }} | {{ current.date }} - {{ current.time }}
                         <button type="button" class="w-auto btn btn-outline-dark btn-group me-2 ps-2 pe-2 h-50 p-0 align-middle mt-1" id="change-date"><p class="m-0 p-0 h6 lh-lg"><a class="text-reset text-decoration-none" href="#">Change date</p></a></button>
                         <button type="button" class="w-auto btn btn-outline-dark btn-group me-2 ps-2 pe-2 h-50 p-0 align-middle mt-1" id="change-type"><p class="m-0 p-0 h6 lh-lg"><a class="text-reset text-decoration-none" href="#">Change type</p></a></button>
                         <button type="button" class="w-auto btn btn-outline-dark btn-group me-2 ps-2 pe-2 h-50 p-0 align-middle mt-1" id="cancel"><p class="m-0 p-0 h6 lh-lg"><a class="text-reset text-decoration-none" href="#">Cancel</p></a></button>
                     </div>
 
+                    {% endif %}
+                {% endfor %}
             </div>
             <button type="button" class="mt-3 btn btn-outline-dark" id="manage">View my past bookings</button>
         </div>
