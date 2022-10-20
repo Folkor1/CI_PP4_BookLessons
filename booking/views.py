@@ -54,4 +54,10 @@ def edit_booking_date(request, booking_id):
         booking.date = request.POST.get('edit_date_inp')
         booking.time = request.POST.get('edit_time_inp')
         booking.save()
+        messages.success(request, 'Date successfully changed.')
         return redirect('manage_bookings')
+    context = {
+        'edit_date_lesson': Bookings.get_lesson(booking),
+        'edit_date_lesson_type': Bookings.get_lesson_type(booking)
+        }
+    return render(request, 'edit_booking_date.html', context)
