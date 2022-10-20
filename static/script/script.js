@@ -8,6 +8,7 @@ $(document).ready(function() {
     let selectTime = document.getElementById("time-confirmation");
     let editDateDate = document.getElementById("edit-date-date");
     let editDateTime = document.getElementById("edit-time");
+    let editLessonType = document.getElementById("edit_lesson_type");
     let booking = [];
     let date = [];
     let time = [];
