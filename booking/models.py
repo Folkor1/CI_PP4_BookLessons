@@ -45,6 +45,17 @@ class Bookings(models.Model):
         """
         return self.student
 
+    def expired():
+        """
+        Set past dates to false
+        """
+        now = date.today()
+        book = Bookings.objects.all()
+        for b in book:
+            if now > b.date:
+                b.status = False
+                b.save()
+
     class Meta:
         ordering = ['-date']
         verbose_name = 'Booking'
