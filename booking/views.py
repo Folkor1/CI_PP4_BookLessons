@@ -30,7 +30,13 @@ class BookingsView(generic.ListView):
             time = request.POST.get('time_inp')
             status = True
             student = request.user
-            booking = Bookings(lesson=lesson, lesson_type=lesson_type, date=date, time=time, status=status, student=student)
+            booking = Bookings(
+                lesson=lesson,
+                lesson_type=lesson_type,
+                date=date,
+                time=time,
+                status=status,
+                student=student)
             booking.save()
             messages.success(request, 'Booking successfully added.')
             return HttpResponseRedirect(reverse('manage_bookings'))
@@ -94,4 +100,3 @@ def cancel_booking(request, booking_id):
         'cancel_time': Bookings.get_time(booking)
         }
     return render(request, 'cancel_booking.html', context)
-    
