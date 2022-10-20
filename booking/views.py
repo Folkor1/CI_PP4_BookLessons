@@ -85,5 +85,12 @@ def cancel_booking(request, booking_id):
     booking = get_object_or_404(Bookings, id=booking_id)
     if request.method == 'POST':
         booking.delete()
+        messages.success(request, 'Lesson successfully canceled.')
         return redirect('manage_bookings')
+    context = {
+        'cancel_lesson': Bookings.get_lesson(booking),
+        'cancel_lesson_type': Bookings.get_lesson_type(booking),
+        'cancel_date': Bookings.get_date(booking),
+        'cancel_time': Bookings.get_time(booking)
+        }
     return render(request, 'cancel_booking.html', context)
