@@ -60,3 +60,16 @@ def edit_booking_date(request, booking_id):
         'edit_date_lesson_type': Bookings.get_lesson_type(booking)
         }
     return render(request, 'edit_booking_date.html', context)
+
+
+def edit_booking_type(request, booking_id):
+    """
+    Edit lesson type
+    """
+    booking = get_object_or_404(Bookings, id=booking_id)
+    if request.method == 'POST':
+        booking.lesson_type = request.POST.get('edit_lesson_type')
+        booking.save()
+        return redirect('manage_bookings')
+    return render(request, 'edit_booking_type.html')
+    
