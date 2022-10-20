@@ -34,3 +34,11 @@ class BookingsView(generic.ListView):
             booking.save()
             messages.success(request, 'Booking successfully added.')
             return HttpResponseRedirect(reverse('bookings'))
+
+
+class ManageBookingsView(generic.ListView):
+    """
+    Render manage bookings page
+    """
+    model = Bookings
+    template_name = "manage_bookings.html"
