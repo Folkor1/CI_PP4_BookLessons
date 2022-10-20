@@ -76,3 +76,14 @@ def edit_booking_type(request, booking_id):
         'edit_date_lesson_type': Bookings.get_lesson_type(booking)
         }
     return render(request, 'edit_booking_type.html', context)
+
+
+def cancel_booking(request, booking_id):
+    """
+    Cancel booking
+    """
+    booking = get_object_or_404(Bookings, id=booking_id)
+    if request.method == 'POST':
+        booking.delete()
+        return redirect('manage_bookings')
+    return render(request, 'cancel_booking.html', context)
