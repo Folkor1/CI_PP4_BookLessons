@@ -147,7 +147,7 @@
                         {% for current in bookings_list %}
                             {% if current.student == request.user and current.status == True %}
 
-                                <p id="upc-book">{{ current.lesson }} {{ current.lesson_type }} | {{ current.date }}</p>
+                                <p id="upc-book">{{ current.lesson }} {{ current.lesson_type }} | {{ current.date }} - {{ current.time }}</p>
                             
                             {% endif %}
                         {% endfor %}
