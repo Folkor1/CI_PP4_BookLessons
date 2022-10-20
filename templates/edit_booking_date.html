@@ -40,19 +40,30 @@
                         </select>
                     </fieldset>
 
-                    <!-- Confirm booking button -->
-                    <div class="mt-3 d-flex justify-content-center d-none" id="book-div">
-                        <button type="button" class="btn text-center border border-dark" id="edit-book-confirm">Change</button>
-                    </div>
+                            <!-- Confirm booking button -->
+                            <div class="mt-3 d-flex justify-content-center d-none" id="book-div">
+                                <button type="button" class="btn text-center border border-dark" id="edit-book-confirm">Change</button>
+                            </div>
 
-                    <!-- Back to lesson type selection  -->
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn text-center mt-5 back-button" id="edit-back-lesson-type"><a class="text-reset text-decoration-none" href="{% url 'manage_bookings' %}"><i class="fa-solid fa-arrow-left fa-fw"></i>Back to Manage booking</a></button>
+                            <!-- Back to lesson type selection  -->
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn text-center mt-5 back-button" id="edit-back-lesson-type"><a class="text-reset text-decoration-none" href="{% url 'manage_bookings' %}"><i class="fa-solid fa-arrow-left fa-fw"></i>Back to Manage booking</a></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Edit date confirmation message -->
+            <form method="POST" class="d-flex justify-content-center">
+                {% csrf_token %}
+                <input type='hidden' name='edit_date_inp' id='edit_date_inp' value=''>
+                <input type='hidden' name='edit_time_inp' id='edit_time_inp' value=''>
+                <div id="edit-date-form" class="row mt-5 d-none border border-dark d-flex justify-content-center ms-5">
+                    </div>
+                </div>
+            </form>
         </div>
-    </div>
 
     {% else %}
 
