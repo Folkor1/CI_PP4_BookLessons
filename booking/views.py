@@ -56,6 +56,13 @@ class ManageBookingsView(generic.ListView):
     model = Bookings
     template_name = "manage_bookings.html"
 
+    def get(self, request, *args, **kwargs):
+        """
+        Hide past dates
+        """
+        Bookings.expired()
+        return super().get(request, *args, **kwargs)
+
 
 def edit_booking_date(request, booking_id):
     """
