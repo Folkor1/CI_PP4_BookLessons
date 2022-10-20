@@ -7,6 +7,7 @@ $(document).ready(function() {
     let selectDate = document.getElementById("date-confirmation");
     let selectTime = document.getElementById("time-confirmation");
     let editDateDate = document.getElementById("edit-date-date");
+    let editDateTime = document.getElementById("edit-time");
     let booking = [];
     let date = [];
     let time = [];
@@ -184,6 +185,12 @@ $(document).ready(function() {
     function getDateDate() {
     editDateDate.innerText = date[0];
     document.getElementById('edit_date_inp').value = date[0];
+    };
+
+    // Get time from time picker on edit
+    function getDateTime() {
+    editDateTime.innerText = time[0];
+    document.getElementById('edit_time_inp').value = time[0];
     };
 
 });
