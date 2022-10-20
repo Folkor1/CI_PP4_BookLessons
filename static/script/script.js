@@ -161,8 +161,8 @@ $(document).ready(function() {
     }, 2500);
 
     // Display status of bookings
-    if($('#upc-book').is(':contains("|")')) {
-        $('#upc-lessons').text("My upcoming bookings:");
+    if($('#upc-book, #upc-manage-book').is(':contains("|")')) {
+        $('.upc-lessons').text("My upcoming bookings:");
     }
 
 });
