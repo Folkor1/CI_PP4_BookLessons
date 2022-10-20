@@ -173,4 +173,10 @@ $(document).ready(function() {
     getDateTime();
     });
 
+    // Edit date - back button
+    $('#edit-date-back-to-selection').on("click", function() {
+    $('#edit-date-form').addClass('d-none');
+    $('#edit-date-time').removeClass('d-none');
+    });
+
 });
