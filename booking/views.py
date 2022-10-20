@@ -94,3 +94,4 @@ def cancel_booking(request, booking_id):
         'cancel_time': Bookings.get_time(booking)
         }
     return render(request, 'cancel_booking.html', context)
+    
