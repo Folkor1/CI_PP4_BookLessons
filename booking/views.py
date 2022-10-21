@@ -114,3 +114,11 @@ def cancel_booking(request, booking_id):
         'cancel_time': Bookings.get_time(booking)
         }
     return render(request, 'cancel_booking.html', context)
+
+
+class PastBookingsView(generic.ListView):
+    """
+    Render past bookings page
+    """
+    model = Bookings
+    template_name = "past_bookings.html"
