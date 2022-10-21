@@ -18,7 +18,7 @@
             {% if past.student == request.user and past.status == False %}
 
                 <div class="mt-2 mb-2">
-                    <p id="past-book">{{ past.lesson }} {{ past.lesson_type }} | {{ past.date }} - {{ past.time }}</p>
+                    <p id="past-book"><i class="fa-solid fa-check me-2"></i>{{ past.lesson }} {{ past.lesson_type }} | {{ past.date }} - {{ past.time }}</p>
                 </div>
 
             {% endif %}
@@ -26,7 +26,7 @@
 
     </div>
 
-    <div class="pagination d-flex justify-content-center">
+    <div class="pagination d-flex justify-content-center mt-5">
         <span class="step-links">
             {% if page_obj.has_previous %}
                 <a class="text-info text-decoration-none" href="?page=1">&laquo; first</a>
