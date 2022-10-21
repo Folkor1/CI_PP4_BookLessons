@@ -12,6 +12,18 @@
             My completed lessons:
         </p>
     </div>
+    </div class="row">
+    <div class="mt-4">
+        {% for past in bookings_list %}
+            {% if past.student == request.user and past.status == False %}
+
+                <div class="mt-2 mb-2 h4">
+                    <p class="me-3 mb-0 lh-lg h6">{{ past.lesson }} {{ past.lesson_type }} | {{ past.date }} - {{ past.time }}</p>
+                </div>
+
+            {% endif %}
+        {% endfor %}
+    </div>
 
     {% else %}
 
