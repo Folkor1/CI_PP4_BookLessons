@@ -13,16 +13,17 @@
             </p>
         </div>
     </div>
-    <div class="mt-4">
-        {% for past in bookings_list %}
-            {% if past.student == request.user and past.status == False %}
+    <div class="d-flex flex-wrap mt-4 row row-cols-3">
+        
+            {% for past in bookings_list %}
+                {% if past.student == request.user and past.status == False %}
 
-                <div class="mt-2 mb-2">
-                    <p id="past-book"><i class="fa-solid fa-check me-2"></i>{{ past.lesson }} {{ past.lesson_type }} | {{ past.date }} - {{ past.time }}</p>
-                </div>
+                    <div class="me-5">
+                        <p id="past-book"><i class="fa-solid fa-check me-2"></i>{{ past.lesson }} {{ past.lesson_type }} | {{ past.date }} - {{ past.time }}</p>
+                    </div>
 
-            {% endif %}
-        {% endfor %}
+                {% endif %}
+            {% endfor %}
 
     </div>
 
@@ -46,7 +47,7 @@
         </span>
     </div>
 
-    <div class="d-flex justify-content-center mt-5">
+    <div class="d-flex justify-content-center mt-5 mb-5">
         <button type="button" class="btn text-center mt-5 back-button"><i class="fa-solid fa-arrow-left fa-fw"></i><a class="text-reset text-decoration-none h6 back-button"  href="{% url 'manage_bookings' %}">Back to Manage Bookings</a></button>
     </div>
 

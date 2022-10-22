@@ -80,15 +80,15 @@ $(document).ready(function() {
 
     // Display time picker once date is selected
     $('#date').datepicker().on('changeDate', function() {
-    $('#time-picker').removeClass('d-none');
+        $('#time-picker').removeClass('d-none');
     });
 
     // Display Book button once time is selected
     $('#time-picker').change(function() {
-    $('#book-div').removeClass('d-none');
-    time.splice(0);
-    var selectedTime = $("#time-picker option:selected").text();
-    time.push(selectedTime);
+        $('#book-div').removeClass('d-none');
+        time.splice(0);
+        var selectedTime = $("#time-picker option:selected").text();
+        time.push(selectedTime);
     });
 
     // Pop-up on hover window
@@ -138,22 +138,22 @@ $(document).ready(function() {
 
     // Booking confirmation message
     $('#book-confirm').on("click", function() {
-    $('#confirm-message').removeClass('d-none');
-    $('#calendar').addClass('d-none');
-    $('#select-date').addClass('d-none');
-    $('#book-for').addClass('d-none');
-    getLesson();
-    getLessonType();
-    getDate();
-    getTime();
+        $('#confirm-message').removeClass('d-none');
+        $('#calendar').addClass('d-none');
+        $('#select-date').addClass('d-none');
+        $('#book-for').addClass('d-none');
+        getLesson();
+        getLessonType();
+        getDate();
+        getTime();
     });
 
     // Confirmation message - back button
     $('#back-to-selection').on("click", function() {
-    $('#confirm-message').addClass('d-none');
-    $('#calendar').removeClass('d-none');
-    $('#select-date').removeClass('d-none');
-    $('#book-for').removeClass('d-none');
+        $('#confirm-message').addClass('d-none');
+        $('#calendar').removeClass('d-none');
+        $('#select-date').removeClass('d-none');
+        $('#book-for').removeClass('d-none');
     });
 
     // Timeout for alert messages
@@ -170,37 +170,37 @@ $(document).ready(function() {
 
     // Edit date confirmation message
     $('#edit-book-confirm').on("click", function() {
-    $('#edit-date-time').addClass('d-none');
-    $('#edit-date-form').removeClass('d-none');
-    getDateDate();
-    getDateTime();
+        $('#edit-date-time').addClass('d-none');
+        $('#edit-date-form').removeClass('d-none');
+        getDateDate();
+        getDateTime();
     });
 
     // Edit date - back button
     $('#edit-date-back-to-selection').on("click", function() {
-    $('#edit-date-form').addClass('d-none');
-    $('#edit-date-time').removeClass('d-none');
+        $('#edit-date-form').addClass('d-none');
+        $('#edit-date-time').removeClass('d-none');
     });
 
     // Get date from date picker on edit
     function getDateDate() {
-    editDateDate.innerText = date[0];
-    document.getElementById('edit_date_inp').value = date[0];
+        editDateDate.innerText = date[0];
+        document.getElementById('edit_date_inp').value = date[0];
     };
 
     // Get time from time picker on edit
     function getDateTime() {
-    editDateTime.innerText = time[0];
-    document.getElementById('edit_time_inp').value = time[0];
+        editDateTime.innerText = time[0];
+        document.getElementById('edit_time_inp').value = time[0];
     };
 
     // Get lesson type on edit
     $('#edit-lesson-type-confirm').on("click", function() {
-    if($("#edit_type_value").is(':contains("Online")')) {
-        editLessonType.value = 'Online'
-    } else {
-        editLessonType.value = 'Offline'
-    }
+        if($("#edit_type_value").is(':contains("Online")')) {
+            editLessonType.value = 'Online'
+        } else {
+            editLessonType.value = 'Offline'
+        }
     });
 
 });
