@@ -145,7 +145,6 @@ def admin_panel(request):
         'admin_total': admin_total,
         'admin_completed': admin_completed,
         'admin_upcoming': admin_upcoming,
-        'booking_filter': booking_filter
     }
     if not request.user.is_superuser:
         raise PermissionDenied
