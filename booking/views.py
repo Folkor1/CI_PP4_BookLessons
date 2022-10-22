@@ -138,7 +138,7 @@ def admin_panel(request):
     admin_upcoming = Bookings.objects.filter(status='True').count()
     admin_total = Bookings.objects.all().count()
     booking = Bookings.objects.all()
-    booking_filter = ListingFilter(request.GET, queryset=booking)
+    booking_filter = BookingFilter(request.GET, queryset=booking)
     context = {
         'admin_piano': admin_piano,
         'admin_theory': admin_theory,

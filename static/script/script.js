@@ -216,6 +216,7 @@ $(document).ready(function() {
         $('#admin-buttons-div').addClass('d-none');
         $('#admin-stats-div').addClass('d-none');
         $('#completed-lessons-p').removeClass('d-none');
+        $('#admin-filter').removeClass('d-none');
     });
 
 });
