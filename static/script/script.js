@@ -210,14 +210,4 @@ $(document).ready(function() {
         }
      }
 
-    // Hide admin panel buttons and display completed lessons
-    $('#completed-lessons').on("click", function() {
-        $('#admin-panel-p').addClass('d-none');
-        $('#admin-buttons-div').addClass('d-none');
-        $('#admin-stats-div').addClass('d-none');
-        $('#completed-lessons-p').removeClass('d-none');
-        $('#admin-filter').removeClass('d-none');
-        $('#filter-results').removeClass('d-none');
-    });
-
 });
