@@ -153,3 +153,12 @@ def admin_panel(request):
         raise PermissionDenied
 
     return render(request, "admin_panel.html", context)
+
+
+def admin_past_bookings(request):
+    """
+    Render admin past bookings
+    """
+    if not request.user.is_superuser:
+        raise PermissionDenied
+    return render(request, "admin_past_bookings.html")
