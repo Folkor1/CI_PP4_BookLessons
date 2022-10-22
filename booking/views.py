@@ -121,5 +121,5 @@ class PastBookingsView(generic.ListView):
     Render past bookings page
     """
     model = Bookings
-    paginate_by = 20
+    paginate_by = 21
     template_name = "past_bookings.html"
