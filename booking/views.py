@@ -133,4 +133,3 @@ def admin_panel(request):
         raise PermissionDenied
 
     return render(request, "admin_panel.html")
-    
