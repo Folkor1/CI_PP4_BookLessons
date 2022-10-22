@@ -3,7 +3,7 @@ from django.views import generic
 from .models import Bookings
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-
+from django.core.exceptions import PermissionDenied
 
 def homepage(request):
     """
@@ -123,3 +123,14 @@ class PastBookingsView(generic.ListView):
     model = Bookings
     paginate_by = 19
     template_name = "past_bookings.html"
+
+
+def admin_panel(request):
+    """
+    Render admin panel
+    """
+    if not request.user.is_superuser:
+        raise PermissionDenied
+
+    return render(request, "admin_panel.html")
+    
