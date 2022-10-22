@@ -4,6 +4,7 @@ from .models import Bookings
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.core.exceptions import PermissionDenied
+from .filters import BookingFilter
 
 def homepage(request):
     """
@@ -136,6 +137,8 @@ def admin_panel(request):
     admin_completed = Bookings.objects.filter(status='False').count()
     admin_upcoming = Bookings.objects.filter(status='True').count()
     admin_total = Bookings.objects.all().count()
+    booking = Bookings.objects.all()
+    booking_filter = ListingFilter(request.GET, queryset=booking)
     context = {
         'admin_piano': admin_piano,
         'admin_theory': admin_theory,
@@ -143,7 +146,8 @@ def admin_panel(request):
         'admin_offline': admin_offline,
         'admin_total': admin_total,
         'admin_completed': admin_completed,
-        'admin_upcoming': admin_upcoming
+        'admin_upcoming': admin_upcoming,
+        'booking_filter': booking_filter
     }
     if not request.user.is_superuser:
         raise PermissionDenied
