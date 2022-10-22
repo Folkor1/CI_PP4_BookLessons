@@ -241,3 +241,7 @@ main {
     width: 280px;
     border: none;
 }
+
+#cards {
+    width: 150px;
+}

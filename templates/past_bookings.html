@@ -18,8 +18,8 @@
             {% for past in bookings_list %}
                 {% if past.student == request.user and past.status == False %}
 
-                    <div class="me-5">
-                        <p id="past-book"><i class="fa-solid fa-check me-2"></i>{{ past.lesson }} {{ past.lesson_type }} | {{ past.date }} - {{ past.time }}</p>
+                    <div class="card text-center m-2" id="cards">
+                        <i class="fa-solid fa-check me-2 mt-2"></i><p class="card-body align-middle mb-0" id="past-book">{{ past.lesson }} <br> {{ past.lesson_type }} <br> <strong>{{ past.date }}</strong> <br> {{ past.time }}</p>
                     </div>
 
                 {% endif %}
@@ -30,19 +30,19 @@
     <div class="pagination d-flex justify-content-center mt-5">
         <span class="step-links">
             {% if page_obj.has_previous %}
-                <a class="text-info text-decoration-none" href="?page=1">&laquo; first</a>
-                <a class="text-info text-decoration-none" href="?page={{ page_obj.previous_page_number }}">previous</a>
+                <a class="fw-bold text-dark text-decoration-none" href="?page=1">&laquo; first</a>
+                <a class="fw-bold text-dark text-decoration-none" href="?page={{ page_obj.previous_page_number }}">previous</a>
             {% endif %}
     
             {% if page_obj.paginator.num_pages > 1 %}
-            <span class="current">
+            <span class="current small">
                 Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
             </span>
             {% endif %}
     
             {% if page_obj.has_next %}
-                <a class="text-info text-decoration-none" href="?page={{ page_obj.next_page_number }}">next</a>
-                <a class="text-info text-decoration-none" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                <a class="fw-bold text-dark text-decoration-none" href="?page={{ page_obj.next_page_number }}">next</a>
+                <a class="fw-bold text-dark text-decoration-none" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
             {% endif %}
         </span>
     </div>
