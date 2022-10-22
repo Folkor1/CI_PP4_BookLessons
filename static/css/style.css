@@ -253,3 +253,12 @@ main {
     height: 80px;
     background-color: #FCF8FF;
 }
+
+select {
+    height: 30px;
+    width: auto;
+}
+
+label {
+    margin-right: 10px;
+}
