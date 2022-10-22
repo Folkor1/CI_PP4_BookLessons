@@ -6,6 +6,7 @@ from django.contrib import messages
 from django.core.exceptions import PermissionDenied
 from .filters import BookingFilter
 
+
 def homepage(request):
     """
     Render the home page
