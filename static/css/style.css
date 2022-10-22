@@ -163,7 +163,7 @@ main {
     width: 220px;
 }
 
-#contacts-font, #upc-book, #pop-up, #upc-manage-book, #past-book {
+#contacts-font, #upc-book, #pop-up, #upc-manage-book, #past-book, .admin-stats {
     font-family: Merriweather Sans, sans-serif;
     font-size: 90%;
 }
