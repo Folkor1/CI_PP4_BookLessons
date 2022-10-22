@@ -203,12 +203,11 @@ $(document).ready(function() {
         }
     });
 
-    // Display status of bookings
+    // Hide paginator
     if (document.location.pathname == "/past_bookings/") {
         if($('.card-body').length < document.getElementById("count").value) {
             $('#pag').addClass("d-none");
         }
      }
-    
 
 });
