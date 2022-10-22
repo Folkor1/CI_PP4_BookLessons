@@ -245,3 +245,11 @@ main {
 #cards {
     width: 160px;
 }
+
+/* Admin panel */
+
+.admin-buttons {
+    width: 230px;
+    height: 80px;
+    background-color: #FCF8FF;
+}
