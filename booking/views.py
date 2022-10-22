@@ -137,8 +137,6 @@ def admin_panel(request):
     admin_completed = Bookings.objects.filter(status='False').count()
     admin_upcoming = Bookings.objects.filter(status='True').count()
     admin_total = Bookings.objects.all().count()
-    booking = Bookings.objects.all()
-    booking_filter = BookingFilter(request.GET, queryset=booking)
     context = {
         'admin_piano': admin_piano,
         'admin_theory': admin_theory,
@@ -159,6 +157,11 @@ def admin_past_bookings(request):
     """
     Render admin past bookings
     """
+    booking = Bookings.objects.all()
+    booking_filter = BookingFilter(request.GET, queryset=booking)
+    context = {
+        'booking_filter': booking_filter
+    }
     if not request.user.is_superuser:
         raise PermissionDenied
-    return render(request, "admin_past_bookings.html")
+    return render(request, "admin_past_bookings.html", context)

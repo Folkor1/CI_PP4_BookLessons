@@ -15,7 +15,7 @@
                 <!-- Select completed on upcoming lessons  -->
                 <div class="flex-column d-flex justify-content-center mt-4" id="admin-buttons-div">
                     <div class="">
-                        <button type="button" class="btn btn-outline-dark admin-buttons" id="completed-lessons">Completed lessons</button>
+                        <button type="button" class="btn btn-outline-dark admin-buttons" id="completed-lessons"><a class="text-reset text-decoration-none h6 back-button"  href="{% url 'admin_past_bookings' %}">Completed lessons</a></button>
                     </div>
                     <div class="mt-3">
                         <button type="button" class="btn btn-outline-dark admin-buttons" id="">Upcoming lessons</button>
@@ -38,23 +38,6 @@
                     <p class="admin-stats mt-4">Total:&nbsp&nbsp{{ admin_total }}</p>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-    <div class="d-none d-flex justify-content-center mt-5 text-center" id="admin-filter">
-        <form method="GET">
-            {{ booking_filter.form }} <br>
-            <button type="submit" class="btn text-center border border-dark bg-light mt-4">Submit</button>
-        </form>
-    </div>
-    <div class="d-flex flex-wrap mt-4 row row-cols-3" id="filter-results">
-        <div class="row row-cols-1 row-cols-sm-2 g-3">
-            {% for booking in booking_filter.qs %}
-            <div class="col">
-                {{ booking.date }}
-            </div>
-            {% endfor %}
         </div>
     </div>
 
