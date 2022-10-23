@@ -12,7 +12,7 @@
         </div>
     </div>
 
-    <div class="mt-5">
+    <div class="mt-5" id="admin-upc">
         <table class="table table-striped table-hover">
             <thead>
               <tr>
@@ -29,7 +29,7 @@
             {% for future in future_filter.qs %}
               <tr>
                 <th scope="row">{{ forloop.counter }}</th>
-                <td>{{ future.student }}</td>
+                <td class="upc-results">{{ future.student }}</td>
                 <td>{{ future.lesson }}</td>
                 <td>{{ future.lesson_type }}</td>
                 <td>{{ future.date }}</td>

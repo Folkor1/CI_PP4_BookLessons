@@ -220,4 +220,10 @@ $(document).ready(function() {
     if($('#id_student option:selected').is(':contains("---------")')) {
         $('#admin-table').addClass("d-none");
     }
+
+    // Hide table if there no upcoming lessons
+    if($('.upc-results').length == 0 ) {
+        $('#admin-upc').addClass("d-none");
+    }
+
 });
