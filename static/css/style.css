@@ -168,7 +168,7 @@ main {
     font-size: 90%;
 }
 
-#manage-bookings, #manage, #success-manage-bookings {
+#manage-bookings, #manage, #success-manage-bookings, .admin-buttons {
     background-color: #FCF8FF;
     padding: 5px 50px 5px 50px;
 }
@@ -247,12 +247,6 @@ main {
 }
 
 /* Admin panel */
-
-.admin-buttons {
-    width: 230px;
-    height: 80px;
-    background-color: #FCF8FF;
-}
 
 #filter-form {
     width: 200px;
