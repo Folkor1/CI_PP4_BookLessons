@@ -171,11 +171,11 @@ def admin_upcoming_bookings(request):
     """
     Render admin upcoming bookings
     """
-    booking = Bookings.objects.filter(status=True)
-    booking_filter = BookingFilter(request.GET, queryset=booking)
+    future_lessons = Bookings.objects.filter(status=True)
+    future_filter = BookingFilter(request.GET, queryset=future_lessons)
     context = {
-        'booking_filter': booking_filter
+        'future_filter': future_filter
     }
     if not request.user.is_superuser:
         raise PermissionDenied
-    return render(request, "admin_upcoming_bookings.html")
+    return render(request, "admin_upcoming_bookings.html", context)
