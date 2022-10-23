@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Bookings
+from .models import Bookings, About
 from django import template
 
 
@@ -11,3 +11,11 @@ class BookingsAdmin(admin.ModelAdmin):
     list_display = ('lesson', 'lesson_type', 'time', 'date', 'status', 'student')
     search_fields = ['lesson', 'lesson_type', 'date', 'status', 'student']
     list_filter = ('lesson', 'lesson_type', 'date', 'status', 'student')
+
+
+@admin.register(About)
+class AboutAdmin(admin.ModelAdmin):
+    """
+    Class for About Admin model
+    """
+    list_display = ('title', 'text', 'image')

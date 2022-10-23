@@ -73,7 +73,6 @@ class About(models.Model):
     class Meta:
         verbose_name = 'About'
         verbose_name_plural = 'Abouts'
-        ordering = ('created',)
 
     def __str__(self):
         """
