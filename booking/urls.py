@@ -11,4 +11,5 @@ urlpatterns = [
     path('past_bookings/', views.PastBookingsView.as_view(), name="past_bookings"),
     path('admin_panel/', views.admin_panel, name="admin_panel"),
     path('admin_past_bookings/', views.admin_past_bookings, name="admin_past_bookings"),
+    path('admin_upcoming_bookings/', views.admin_upcoming_bookings, name="admin_upcoming_bookings")
 ]
