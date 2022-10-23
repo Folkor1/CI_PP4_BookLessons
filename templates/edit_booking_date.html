@@ -47,7 +47,7 @@
 
                             <!-- Back to lesson type selection  -->
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn text-center mt-5 back-button" id="edit-back-lesson-type"><a class="text-reset text-decoration-none" href="{% url 'manage_bookings' %}"><i class="fa-solid fa-arrow-left fa-fw"></i>Back to Manage booking</a></button>
+                                <div class="btn text-center mt-5 back-button" id="edit-back-lesson-type"><a class="text-reset text-decoration-none" href="{% url 'manage_bookings' %}"><i class="fa-solid fa-arrow-left fa-fw"></i>Back to Manage booking</a></div>
                             </div>
                         </div>
                     </div>
@@ -64,14 +64,14 @@
                         <p class="mt-3 h4 mb-0 text-center">Change date and time to:</p>
                     </div>
                     <div class="row d-flex justify-content-center confirmation-div">
-                        <span class="h5 text-end p-0 me-3" id="edit-date-date" name="edit-date-date"></span>
-                        <span class="h5 text-start p-0" id="edit-time" date="edit-time"></span>
+                        <span class="h5 text-end p-0 me-3" id="edit-date-date"></span>
+                        <span class="h5 text-start p-0" id="edit-time"></span>
                     </div>
                     <div class="col-5 d-flex justify-content-center h-25">
                         <button type="submit" class="btn text-center border border-dark bg-secondary bg-opacity-25" id="edit-date-confirm"><i class="fa-solid fa-check fa-fw"></i>Confirm</button>
                     </div>
                     <div class="col-5 d-flex justify-content-center h-25">
-                        <button type="button" class="btn text-center border border-dark bg-secondary bg-opacity-25" id="edit-date-back-to-selection"></i>Back</button>
+                        <div class="btn text-center border border-dark bg-secondary bg-opacity-25" id="edit-date-back-to-selection">Back</div>
                     </div>
                 </div>
             </form>
