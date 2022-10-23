@@ -215,4 +215,8 @@ $(document).ready(function() {
         $('#no-records').removeClass("d-none");
         $('#admin-table').addClass("d-none");
     }
+
+    if($('#id_student option:selected').is(':contains("---------")')) {
+        $('#admin-table').addClass("d-none");
+    }
 });
