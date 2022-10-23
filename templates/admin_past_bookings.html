@@ -22,7 +22,7 @@
         <div class="d-flex flex-wrap mt-5 row-cols-3">
             {% for booking in booking_filter.qs %}
             <div class="h5 admin-stats mt-3 left">
-                {{ booking.lesson }} {{ booking.lesson_type }} | {{ booking.date }} {{ booking.time }}
+                {{ booking.lesson }} {{ booking.lesson_type }} | {{ booking.date }} - {{ booking.time }}
             </div>
                 {% if forloop.counter|divisibleby:5 %}
             <div class="row">

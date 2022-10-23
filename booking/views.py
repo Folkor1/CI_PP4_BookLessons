@@ -157,7 +157,7 @@ def admin_past_bookings(request):
     """
     Render admin past bookings
     """
-    booking = Bookings.objects.all()
+    booking = Bookings.objects.filter(status=False)
     booking_filter = BookingFilter(request.GET, queryset=booking)
     context = {
         'booking_filter': booking_filter
