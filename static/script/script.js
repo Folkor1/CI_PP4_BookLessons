@@ -210,4 +210,8 @@ $(document).ready(function() {
         }
      }
 
+    // Display 'No records found' on admin past bookings
+    if($('.admin-stats').length == 0 ) {
+        $('#no-records').removeClass("d-none");
+    }
 });
