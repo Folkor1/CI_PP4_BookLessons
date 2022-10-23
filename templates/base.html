@@ -5,6 +5,7 @@
 {% url 'account_logout' as account_logout %}
 {% url 'bookings' as bookings %}
 {% url 'admin_panel' as admin_panel %}
+{% url 'about' as about %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +40,7 @@
                 <a class="nav-link {% if request.path == homepage %} active {% endif %}" aria-current="page" href="{% url 'homepage' %}">HOME</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">ABOUT</a>
+                <a class="nav-link {% if request.path == about %} active {% endif %}" aria-current="page" href="{% url 'about' %}">ABOUT</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link {% if request.path == bookings %} active {% endif %}" aria-current="page" href="{% url 'bookings' %}">BOOKINGS</a>
