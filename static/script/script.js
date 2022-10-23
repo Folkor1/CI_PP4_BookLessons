@@ -216,6 +216,7 @@ $(document).ready(function() {
         $('#admin-table').addClass("d-none");
     }
 
+    // Hide search results if no student is selected
     if($('#id_student option:selected').is(':contains("---------")')) {
         $('#admin-table').addClass("d-none");
     }
