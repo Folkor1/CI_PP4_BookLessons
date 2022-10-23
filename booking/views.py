@@ -180,3 +180,10 @@ def admin_upcoming_bookings(request):
         raise PermissionDenied
     return render(request, "admin_upcoming_bookings.html", context)
 
+
+class AboutView(generic.ListView):
+    """
+    Render about page
+    """
+    model = About
+    template_name = "about.html"
