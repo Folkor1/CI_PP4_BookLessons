@@ -99,18 +99,18 @@
                             <p class="mt-3 h4 mb-0 text-center">This is booking for</p>
                         </div>
                         <div class="row d-flex justify-content-center confirmation-div">
-                            <span class="h5 text-end p-0 me-2" id="lesson-confirmation" name="lesson"></span>
-                            <span class="h5 text-start p-0" id="lesson-type-confirmation" name="lesson_type"></span>
+                            <span class="h5 text-end p-0 me-2" id="lesson-confirmation"></span>
+                            <span class="h5 text-start p-0" id="lesson-type-confirmation"></span>
                         </div>
                         <div class="row d-flex justify-content-center confirmation-div">
-                            <span class="h5 text-end p-0 me-3" id="date-confirmation" name="date"></span>
-                            <span class="h5 text-start p-0" id="time-confirmation" date="time"></span>
+                            <span class="h5 text-end p-0 me-3" id="date-confirmation"></span>
+                            <span class="h5 text-start p-0" id="time-confirmation"></span>
                         </div>
                         <div class="col-5 d-flex justify-content-center">
                             <button type="submit" class="btn text-center border border-dark bg-secondary bg-opacity-25" id="confirm"><i class="fa-solid fa-check fa-fw"></i>Confirm</button>
                         </div>
                         <div class="col-5 d-flex justify-content-center">
-                            <button type="button" class="btn text-center border border-dark bg-secondary bg-opacity-25" id="back-to-selection"></i>Back</button>
+                            <button type="button" class="btn text-center border border-dark bg-secondary bg-opacity-25" id="back-to-selection">Back</button>
                         </div>
                     </div>
                 </form>
@@ -147,7 +147,7 @@
                         {% endfor %}
 
                     </div>
-                    <button type="button" class="btn btn-outline-dark ms-auto" id="manage-bookings"><a class="text-reset text-decoration-none h6"  href="{% url 'manage_bookings' %}">Manage bookings</a></button>
+                    <div class="btn btn-outline-dark ms-auto" id="manage-bookings"><a class="text-reset text-decoration-none h6"  href="{% url 'manage_bookings' %}">Manage bookings</a></div>
                 </div>
             </div>
         </div>
