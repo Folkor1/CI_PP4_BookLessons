@@ -224,6 +224,8 @@ $(document).ready(function() {
     // Hide table if there no upcoming lessons
     if($('.upc-results').length == 0 ) {
         $('#admin-upc').addClass("d-none");
+        $('#upc-no-records').removeClass("d-none");
+        
     }
 
 });
