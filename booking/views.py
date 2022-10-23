@@ -179,3 +179,4 @@ def admin_upcoming_bookings(request):
     if not request.user.is_superuser:
         raise PermissionDenied
     return render(request, "admin_upcoming_bookings.html", context)
+
