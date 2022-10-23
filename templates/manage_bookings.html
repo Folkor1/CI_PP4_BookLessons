@@ -17,15 +17,15 @@
 
                     <div class="btn-toolbar d-flex justify-content-center mt-2 mb-2 h4">
                         <p class="btn-group me-3 mb-0 lh-lg" id="upc-manage-book">{{ current.lesson }} {{ current.lesson_type }} | {{ current.date }} - {{ current.time }}</p>
-                        <button type="button" class="w-auto btn btn-outline-dark btn-group me-2 ps-2 pe-2 h-50 p-0 align-middle mt-1" id="change-date"><p class="m-0 p-0 h6 lh-lg"><a class="text-reset text-decoration-none" href="/edit/{{ current.id }}">Change date</p></a></button>
-                        <button type="button" class="w-auto btn btn-outline-dark btn-group me-2 ps-2 pe-2 h-50 p-0 align-middle mt-1" id="change-type"><p class="m-0 p-0 h6 lh-lg"><a class="text-reset text-decoration-none" href="/edit_type/{{ current.id }}">Change type</p></a></button>
-                        <button type="button" class="w-auto btn btn-outline-dark btn-group me-2 ps-2 pe-2 h-50 p-0 align-middle mt-1" id="cancel"><p class="m-0 p-0 h6 lh-lg"><a class="text-reset text-decoration-none" href="/cancel/{{ current.id }}">Cancel</p></a></button>
+                        <div class="w-auto btn btn-outline-dark btn-group me-2 ps-2 pe-2 h-50 p-0 align-middle mt-1" id="change-date"><p class="m-0 p-0 h6 lh-lg"><a class="text-reset text-decoration-none" href="/edit/{{ current.id }}">Change date</a></p></div>
+                        <div class="w-auto btn btn-outline-dark btn-group me-2 ps-2 pe-2 h-50 p-0 align-middle mt-1" id="change-type"><p class="m-0 p-0 h6 lh-lg"><a class="text-reset text-decoration-none" href="/edit_type/{{ current.id }}">Change type</a></p></div>
+                        <div class="w-auto btn btn-outline-dark btn-group me-2 ps-2 pe-2 h-50 p-0 align-middle mt-1" id="cancel"><p class="m-0 p-0 h6 lh-lg"><a class="text-reset text-decoration-none" href="/cancel/{{ current.id }}">Cancel</a></p></div>
                     </div>
 
                     {% endif %}
                 {% endfor %}
             </div>
-            <button type="button" class="mt-3 btn btn-outline-dark" id="manage"><a class="text-reset text-decoration-none" href="{% url 'past_bookings' %}">View my past bookings</a></button>
+            <div class="mt-3 btn btn-outline-dark" id="manage"><a class="text-reset text-decoration-none" href="{% url 'past_bookings' %}">View my past bookings</a></div>
         </div>
     </div>
 
