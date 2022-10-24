@@ -262,3 +262,24 @@ select {
 label {
     margin-right: 10px;
 }
+
+/* Media quaries for home page */
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+
+    #map-image {
+        position: absolute;
+        right: 50px;
+    }
+
+    #working-days {
+        width: 300px;
+    }
+
+    #book-button {
+        width: 230px;
+        padding: 5px;
+    }
+
+}
