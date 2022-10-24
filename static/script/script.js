@@ -118,23 +118,23 @@ $(document).ready(function() {
       function getLesson() {
         lesson.innerText = booking[0];
         document.getElementById('lesson_inp').value = booking[0];
-    };
+    }
 
     function getLessonType() {
         lessonType.innerText = booking[1];
         document.getElementById('lesson_type_inp').value = booking[1];
-    };
+    }
 
     function getDate() {
         selectDate.innerText = date[0];
         document.getElementById('date_inp').value = date[0];
-    };
+    }
 
     // Get time from time picker
     function getTime() {
         selectTime.innerText = time[0];
         document.getElementById('time_inp').value = time[0];
-    };
+    }
 
     // Booking confirmation message
     $('#book-confirm').on("click", function() {
@@ -157,11 +157,9 @@ $(document).ready(function() {
     });
 
     // Timeout for alert messages
-    setTimeout(function () {
-        let messages = document.getElementById('msg');
-        let alert = new bootstrap.Alert(messages);
-        alert.close();
-    }, 2500);
+    setTimeout(function() {
+        $(".alert").alert('close');
+    }, 2000);
 
     // Display status of bookings
     if($('#upc-book, #upc-manage-book').is(':contains("|")')) {
@@ -186,20 +184,20 @@ $(document).ready(function() {
     function getDateDate() {
         editDateDate.innerText = date[0];
         document.getElementById('edit_date_inp').value = date[0];
-    };
+    }
 
     // Get time from time picker on edit
     function getDateTime() {
         editDateTime.innerText = time[0];
         document.getElementById('edit_time_inp').value = time[0];
-    };
+    }
 
     // Get lesson type on edit
     $('#edit-lesson-type-confirm').on("click", function() {
         if($("#edit_type_value").is(':contains("Online")')) {
-            editLessonType.value = 'Online'
+            editLessonType.value = 'Online';
         } else {
-            editLessonType.value = 'Offline'
+            editLessonType.value = 'Offline';
         }
     });
 
