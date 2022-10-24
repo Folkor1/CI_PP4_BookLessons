@@ -336,3 +336,21 @@ label {
     }
 
 }
+
+/* For small screens size from 500px wide and down */
+@media screen and (max-width: 500px) {
+
+    #home-text {
+        font-size: 90%;
+    }
+
+    .contact-list {
+        font-size: 100%;
+    }
+
+    #map-image {
+        left: 20px;
+        width: 90%;
+    }
+
+}
