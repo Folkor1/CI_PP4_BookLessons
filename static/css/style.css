@@ -365,3 +365,16 @@ label {
     }
 
 }
+
+/* For small screens size from 350px wide and down */
+@media screen and (max-width: 350px) {
+
+    #logged-as {
+        font-size: 90%;
+    }
+
+    #map-image {
+        margin-top: 550px;
+    }
+
+}
