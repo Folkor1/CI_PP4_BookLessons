@@ -41,7 +41,7 @@ class Bookings(models.Model):
 
     def get_student(self):
         """
-        Return time
+        Return student
         """
         return self.student
 
