@@ -283,3 +283,29 @@ label {
     }
 
 }
+
+/* For medium screens size from 1000px wide and down */
+@media screen and (max-width: 1000px) {
+
+    #house-pic {
+        float: left;
+        width: 50%;
+    }
+
+    #schedule {
+        float: right;
+        width: 50%;
+    }
+
+    #map-image {
+        margin-top: 350px;
+        float: right;
+        width: 50%;
+        left: 200px;
+    }
+
+    #stamps {
+        margin-top: 400px;
+    }
+
+}
