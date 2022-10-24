@@ -315,6 +315,13 @@ label {
     #stamps {
         margin-top: 450px;
     }
+
+    .img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 /* For small screens size from 700px wide and down */
@@ -335,6 +342,16 @@ label {
         left: 100px;
     }
 
+    .text-about {
+        font-size: 100%;
+    }
+
+    .img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 /* For small screens size from 500px wide and down */
@@ -351,6 +368,14 @@ label {
     #map-image {
         left: 20px;
         width: 90%;
+    }
+
+    .text-about {
+        width: 100%;
+    }
+
+    .img-div {
+        width: 100%;
     }
 
 }
@@ -376,5 +401,4 @@ label {
     #map-image {
         margin-top: 550px;
     }
-
 }
