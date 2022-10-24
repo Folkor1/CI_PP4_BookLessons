@@ -354,3 +354,14 @@ label {
     }
 
 }
+
+/* For small screens size from 400px wide and down */
+@media screen and (max-width: 400px) {
+
+    #house-pic, #schedule {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
