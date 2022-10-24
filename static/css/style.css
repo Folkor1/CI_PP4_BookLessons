@@ -287,9 +287,14 @@ label {
 /* For medium screens size from 1000px wide and down */
 @media screen and (max-width: 1000px) {
 
+    .navbar-toggler {
+        margin-top: 20px;
+        background-color: #FCF8FF;
+    }
+
     #house-pic {
         float: left;
-        width: 50%;
+        width: 45%;
     }
 
     #schedule {
@@ -298,14 +303,14 @@ label {
     }
 
     #map-image {
-        margin-top: 350px;
+        margin-top: 380px;
         float: right;
-        width: 50%;
-        left: 200px;
+        left: 120px;
+        width: 70%;
     }
 
     #stamps {
-        margin-top: 400px;
+        margin-top: 450px;
     }
 
 }
