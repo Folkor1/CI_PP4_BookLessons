@@ -268,6 +268,10 @@ label {
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
 
+    .contact-list {
+        margin-top: 10px;
+    }
+
     #map-image {
         position: absolute;
         right: 50px;
@@ -298,7 +302,6 @@ label {
     }
 
     #schedule {
-        float: right;
         width: 50%;
     }
 
@@ -311,6 +314,25 @@ label {
 
     #stamps {
         margin-top: 450px;
+    }
+}
+
+/* For small screens size from 700px wide and down */
+@media screen and (max-width: 700px) {
+
+    #home-text {
+        font-size: 100%;
+    }
+
+    #house-pic, #schedule {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    #map-image {
+        margin-top: 600px;
+        left: 100px;
     }
 
 }
