@@ -291,10 +291,6 @@ label {
         width: 70%;
     }
 
-    #select-lesson {
-        min-height: 60vh;
-    }
-
     #selection {
         position: absolute;
         top: 50px;;
@@ -303,9 +299,13 @@ label {
     }
 
     #contacts {
-        position: relative;
-        left: 0px;
-        bottom: 0px;
+        position: fixed;
+        left: 30px;
+        bottom: 100px;
+    }
+
+    #manage-bookings-wrap {
+        width: 30%;
     }
 }
 
@@ -342,6 +342,31 @@ label {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #manage-bookings-wrap {
+        position: absolute;
+        width: 100%;
+    }
+
+    #selection {
+        position: relative;
+        top: 200px;
+    }
+
+    #confirm-message {
+        position: relative;
+        top: 100px;
+    }
+
+    #select-lesson {
+        min-height: 100vh;
+    }
+
+    #contacts {
+        position: relative;
+        left: 0;
+        bottom: 0;
     }
 
 }
