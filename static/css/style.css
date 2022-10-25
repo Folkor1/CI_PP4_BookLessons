@@ -300,6 +300,8 @@ label {
     #manage-bookings-side {
         width: 30%;
     }
+
+
 }
 
 /* For medium screens size from 1000px wide and down */
@@ -366,6 +368,12 @@ label {
         display: block;
         margin: 20px auto 0 auto;
         width: 100%;
+    }
+
+    #admin-panel-div {
+        position: absolute;
+        left: 0;
+        width: 50%;
     }
 
 }
@@ -440,6 +448,15 @@ label {
         font-size: 20px;
     }
 
+    #admin-panel-div {
+        width: 100%;
+    }
+    
+    #admin-stats-div {
+        margin-top: 300px;
+        left: 100px;
+        text-align: center;
+    }
 }
 
 /* For small screens size from 500px wide and down */
