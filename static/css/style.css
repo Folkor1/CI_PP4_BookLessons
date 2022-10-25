@@ -421,6 +421,11 @@ label {
         width: 90%;
     }
 
+    #edit-lesson-type {
+        height: 230px;
+        width: 100%;
+    }
+
 }
 
 /* For small screens size from 500px wide and down */
@@ -465,6 +470,11 @@ label {
 
     #edit-date-form {
         width: 70%;
+    }
+
+    #edit-lesson-type-confirm, #edit-lesson-type-back-to-selection {
+        font-size: 90%;
+        width: 80%;
     }
 
 }
