@@ -491,6 +491,13 @@ label {
         width: 80%;
     }
 
+    #cards-wrap {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
 }
 
 /* For small screens size from 400px wide and down */
@@ -534,5 +541,4 @@ label {
     #cancel-lesson-msg {
         font-size: 18px;
     }
-
 }

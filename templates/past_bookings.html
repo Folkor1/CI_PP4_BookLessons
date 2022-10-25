@@ -13,7 +13,7 @@
             </p>
         </div>
     </div>
-    <div class="d-flex flex-wrap mt-4 row row-cols-3">
+    <div class="d-flex flex-wrap mt-4 row row-cols-3" id="cards-wrap">
         
             {% for past in bookings_list %}
                 {% if past.student == request.user and past.status == False %}
