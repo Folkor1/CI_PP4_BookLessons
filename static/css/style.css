@@ -376,6 +376,14 @@ label {
         width: 50%;
     }
 
+    #admin-panel-parent {
+        min-height: 40vh;
+    }
+
+    #manage-bookings-wrap {
+        min-height: 70vh;
+    }
+
 }
 
 /* For small screens size from 700px wide and down */
@@ -457,6 +465,15 @@ label {
         left: 100px;
         text-align: center;
     }
+
+    #admin-panel-parent {
+        min-height: 70vh;
+    }
+
+    .table-responsive {
+        max-height: 700px;
+    }
+
 }
 
 /* For small screens size from 500px wide and down */
@@ -558,4 +575,5 @@ label {
     #cancel-lesson-msg {
         font-size: 18px;
     }
+
 }
