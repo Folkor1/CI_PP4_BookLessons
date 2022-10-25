@@ -265,25 +265,28 @@ label {
 
 /* Media quaries for home page */
 
-/* For larger to medium screens size from 1200px wide and down */
-@media screen and (max-width: 1200px) {
+/* For large screens size from 1500px wide and down */
+@media screen and (max-width: 1500px) {
 
-    .contact-list {
-        margin-top: 10px;
-    }
-
-    #map-image {
+    #manage-bookings-wrap {
         position: absolute;
-        right: 50px;
+        right: 0;
     }
 
-    #working-days {
-        width: 300px;
+    #select-lesson {
+        position: absolute;
     }
 
-    #book-button {
-        width: 230px;
-        padding: 5px;
+    #selection {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contacts {
+        position: fixed;
+        left: 30px;
+        bottom: 100px;
     }
 
 }
