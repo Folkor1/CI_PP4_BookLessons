@@ -407,6 +407,20 @@ label {
         text-align: center;
     }
 
+    #edit-date-form {
+        height: 230px;
+        width: 400px;
+    }
+
+    #edit-date-date, #edit-time {
+        width: auto;
+    }
+
+    #edit-date-confirm, #edit-date-back-to-selection {
+        font-size: 90%;
+        width: 90%;
+    }
+
 }
 
 /* For small screens size from 500px wide and down */
@@ -449,6 +463,10 @@ label {
         font-size: 90%;;
     }
 
+    #edit-date-form {
+        width: 70%;
+    }
+
 }
 
 /* For small screens size from 400px wide and down */
@@ -458,6 +476,12 @@ label {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    #edit-date-form {
+        position: absolute;
+        width: 90%;
+        margin: 0 auto 0 auto;
     }
 
 }
