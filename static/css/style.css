@@ -426,6 +426,20 @@ label {
         width: 100%;
     }
 
+    #cancel-lesson {
+        height: 230px;
+        width: 100%;
+    }
+
+    #cancel-lesson-confirm, #cancel-lesson-back-to-selection {
+        font-size: 90%;
+        width: 90%;
+    }
+
+    #cancel-lesson-msg {
+        font-size: 20px;
+    }
+
 }
 
 /* For small screens size from 500px wide and down */
@@ -494,6 +508,12 @@ label {
         margin: 0 auto 0 auto;
     }
 
+    #cancel-lesson {
+        position: absolute;
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
+
 }
 
 /* For small screens size from 350px wide and down */
@@ -510,4 +530,9 @@ label {
     #manage-bookings-side {
         left: 10px;
     }
+
+    #cancel-lesson-msg {
+        font-size: 18px;
+    }
+
 }
