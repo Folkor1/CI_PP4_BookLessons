@@ -110,16 +110,6 @@ main {
     font-size: 80%;
 }
   
-#select-lesson {
-    position: absolute;
-    left: 0;
-}
-
-#selection {
-    margin: 100px 0 0 600px;
-    height: 580px;
-}
-  
 .lesson-button {
     height: 80px;
     width: 130px;
@@ -180,10 +170,26 @@ main {
     background-color: #1c1b1a;
 }
 
+#manage-bookings-wrap {
+    position: fixed;
+    right: 30px;
+}
+
 #contacts {
-    position: absolute;
+    position: fixed;
+    left: 30px;
     bottom: 100px;
-    left: 40px;
+}
+
+#selection {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#confirm-message {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Pop-up on hover window */
@@ -268,45 +274,12 @@ label {
 /* For large screens size from 1500px wide and down */
 @media screen and (max-width: 1500px) {
 
-    #manage-bookings-wrap {
-        position: absolute;
-        right: 0;
-    }
 
-    #select-lesson {
-        position: absolute;
-    }
-
-    #selection {
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #confirm-message {
-        position: absolute;
-        right: 0;
-    }
 
 }
 
 /* For medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
-
-    #manage-bookings-wrap {
-        width: 30%;
-        float: right;
-    }
-
-    #selection {
-        position: fixed;
-        left: 250px;
-        top: 50px;
-    }
-
-    #contacts {
-        margin-top: 150px;
-    }
 
     #map-image {
         position: absolute;
@@ -318,6 +291,22 @@ label {
         width: 70%;
     }
 
+    #select-lesson {
+        min-height: 60vh;
+    }
+
+    #selection {
+        position: absolute;
+        top: 50px;;
+        width: 80%;
+        left: 0px;
+    }
+
+    #contacts {
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
 }
 
 /* For medium screens size from 1000px wide and down */
@@ -353,12 +342,6 @@ label {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    #confirm-message {
-        width: auto;
-        height: auto;
-        padding-bottom: 30px;
     }
 
 }
