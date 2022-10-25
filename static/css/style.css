@@ -182,8 +182,8 @@ main {
 
 #contacts {
     position: absolute;
-    bottom: 0px;
-    left: 80px;
+    bottom: 100px;
+    left: 40px;
 }
 
 /* Pop-up on hover window */
@@ -283,12 +283,6 @@ label {
         margin-right: auto;
     }
 
-    #contacts {
-        position: fixed;
-        left: 30px;
-        bottom: 100px;
-    }
-
     #confirm-message {
         position: absolute;
         right: 0;
@@ -307,7 +301,21 @@ label {
     #selection {
         position: fixed;
         left: 250px;
-        height: 700px;
+        top: 50px;
+    }
+
+    #contacts {
+        margin-top: 150px;
+    }
+
+    #map-image {
+        position: absolute;
+        right: 30px;
+        width: 40%;
+    }
+
+    #schedule {
+        width: 70%;
     }
 
 }
@@ -326,18 +334,19 @@ label {
     }
 
     #schedule {
-        width: 50%;
+        width: 55%;
     }
 
     #map-image {
-        margin-top: 380px;
+        position: relative;
+        margin-top: 50px;
         float: right;
         left: 120px;
         width: 70%;
     }
 
     #stamps {
-        margin-top: 450px;
+        margin-top: 100px;;
     }
 
     .img-div {
@@ -345,6 +354,13 @@ label {
         justify-content: center;
         align-items: center;
     }
+
+    #confirm-message {
+        width: auto;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
 }
 
 /* For small screens size from 700px wide and down */
@@ -361,8 +377,7 @@ label {
     }
 
     #map-image {
-        margin-top: 600px;
-        left: 100px;
+        left: 50px;
     }
 
     .text-about {
@@ -382,6 +397,12 @@ label {
 
     #home-text {
         font-size: 90%;
+    }
+
+    #schedule {
+        justify-content: center;
+        margin-left: 50px;
+        width: 100%;
     }
 
     .contact-list {
@@ -407,7 +428,7 @@ label {
 @media screen and (max-width: 400px) {
 
     #house-pic, #schedule {
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -419,9 +440,5 @@ label {
 
     #logged-as {
         font-size: 90%;
-    }
-
-    #map-image {
-        margin-top: 550px;
     }
 }
