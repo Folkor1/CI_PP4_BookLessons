@@ -398,6 +398,16 @@ label {
         align-items: center;
     }
 
+    #confirm-message {
+        height: 230px;
+        width: 350px;
+    }
+
+    #date-confirmation, #time-confirmation {
+        width: auto;
+        text-align: center;
+    }
+
 }
 
 /* For small screens size from 500px wide and down */
@@ -428,6 +438,16 @@ label {
 
     .img-div {
         width: 100%;
+    }
+
+    #confirm-message {
+        position: absolute;
+        width: 100%;
+        height: 35%;
+    }
+
+    #confirm, #back-to-selection {
+        font-size: 90%;;
     }
 
 }
