@@ -555,6 +555,10 @@ label {
         margin: 0 auto 0 auto;
     }
 
+    #manage-bookings-wrap {
+        min-height: 80vh;
+    }
+
 }
 
 /* For small screens size from 350px wide and down */
@@ -575,5 +579,4 @@ label {
     #cancel-lesson-msg {
         font-size: 18px;
     }
-
 }
