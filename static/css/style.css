@@ -271,13 +271,6 @@ label {
 
 /* Media quaries for home page */
 
-/* For large screens size from 1500px wide and down */
-@media screen and (max-width: 1500px) {
-
-
-
-}
-
 /* For medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
 
@@ -367,6 +360,12 @@ label {
         position: relative;
         left: 0;
         bottom: 0;
+    }
+
+    #upc-manage-book {
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 100%;
     }
 
 }
