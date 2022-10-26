@@ -28,3 +28,16 @@ class TestDates(unittest2.TestCase):
             status=True
             )
         Bookings.expired()
+
+        def test_dates(self):
+            """
+            Check if False is setting only to past date
+            """
+            fut = Bookings.objects.get(date='2030-10-24')
+            past = Bookings.objects.get(date='2022-10-24')
+            message_past = "Past date is True."
+            message_fut = "Future date is False."
+            self.assertFalse(past.status, message_past)
+            self.assertTrue(fut.status, message_fut)
+            past.delete()
+            fut.delete()
