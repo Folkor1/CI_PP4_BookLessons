@@ -41,3 +41,20 @@ class TestDates(unittest2.TestCase):
             self.assertTrue(fut.status, message_fut)
             past.delete()
             fut.delete()
+
+
+class TestLesson(unittest2.TestCase):
+
+    def setUp(self):
+        Bookings.objects.create(
+            lesson='Theory',
+            lesson_type='Offline',
+            date='2022-10-25',
+            time='12:00',
+            student_id=1,
+            status=False
+            )
+
+
+if __name__ == '__main__':
+    unittest.main()
