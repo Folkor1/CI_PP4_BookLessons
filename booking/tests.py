@@ -55,6 +55,29 @@ class TestLesson(unittest2.TestCase):
             status=False
             )
 
+    def test_lesson(self):
+        """
+        Check if Bookings values are returned correctly
+        """
+        lesson = Bookings.objects.get(date='2022-10-25')
+        message_lesson = "Lesson is not Theory."
+        message_lesson_type = "Lesson type is not Offline."
+        message_date = "The date is not 2022-10-25."
+        message_time = "Time is not 12:00."
+        self.assertEqual(Bookings.get_lesson(lesson), 'Theory', message_lesson)
+        self.assertEqual(
+            Bookings.get_lesson_type(lesson),
+            'Offline',
+            message_lesson_type
+            )
+        self.assertEqual(
+            Bookings.get_date(lesson),
+            date(2022, 10, 25),
+            message_date
+            )
+        self.assertEqual(Bookings.get_time(lesson), time(12, 0), message_time)
+        lesson.delete()
+
 
 if __name__ == '__main__':
     unittest.main()
