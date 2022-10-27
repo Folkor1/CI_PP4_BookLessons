@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
 from datetime import datetime, date
 
 
@@ -60,22 +59,3 @@ class Bookings(models.Model):
         ordering = ['-date']
         verbose_name = 'Booking'
         verbose_name_plural = 'Bookings'
-
-
-class About(models.Model):
-    """
-    Class for about model
-    """
-    title = models.CharField(max_length=100)
-    text = models.TextField(max_length=1000)
-    image = CloudinaryField('image', default='placeholder', blank=True)
-
-    class Meta:
-        verbose_name = 'About'
-        verbose_name_plural = 'Abouts'
-
-    def __str__(self):
-        """
-        Return title
-        """
-        return self.title

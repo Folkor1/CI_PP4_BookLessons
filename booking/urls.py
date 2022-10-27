@@ -16,5 +16,4 @@ urlpatterns = [
         views.PastBookingsView.as_view(),
         name="past_bookings"
         ),
-    path('about/', views.AboutView.as_view(), name="about")
 ]
