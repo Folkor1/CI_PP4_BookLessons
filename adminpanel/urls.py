@@ -10,4 +10,8 @@ urlpatterns = [
         views.admin_past_bookings,
         name="admin_past_bookings"
         ),
+    path(
+        'admin_upcoming_bookings/',
+        views.admin_upcoming_bookings,
+        name="admin_upcoming_bookings")
 ]
