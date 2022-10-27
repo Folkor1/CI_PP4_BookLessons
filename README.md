@@ -52,3 +52,22 @@ It's also possible for admin user to access bookings stats.
 
 - Be able to keep track of all upcoming lessons.
 - Access information of all past bookings using filter.
+
+## User Experience
+
+### Target Audience
+
+- Beginner or experienced musicians of all age levels.
+- Everyone who's interested in theory of music and learning piano playing.
+- Who require flexibility of online/offline lesson types.
+
+### User Requirements and Expectations
+
+- Intuitive navigation.
+- Responsive design.
+- Easy way to book, amend and cancel booking.
+- Access records associated with the account.
+
+### User Manual
+
+<details><summary>Click here to view instructions</summary>
