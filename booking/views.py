@@ -3,7 +3,6 @@ from django.views import generic
 from .models import Bookings
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from .filters import BookingFilter
 
 
 class BookingsView(generic.ListView):
