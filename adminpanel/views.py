@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from booking.models import Bookings
 from django.core.exceptions import PermissionDenied
+from booking.filters import BookingFilter
 
 
 def admin_panel(request):

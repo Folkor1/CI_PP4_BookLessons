@@ -24,4 +24,8 @@ urlpatterns = [
         ('adminpanel.urls', 'admin_panel'),
         namespace='adminpanel')
         ),
+    path('', include(
+        ('adminpanel.urls', 'admin_past_bookings'),
+        namespace='admin_past_bookings')
+        ),
 ]
