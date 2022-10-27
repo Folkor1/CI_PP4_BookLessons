@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'booking',
     'adminpanel',
     'home',
+    'about',
     'django_filters',
 ]
 
