@@ -4,4 +4,4 @@
 
 [Link to the live project](https://booking-app-pp4.herokuapp.com/)
 
-![logo]
+![logo](static/images/all-devices-black.png)
