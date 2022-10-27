@@ -38,3 +38,17 @@ It's also possible for admin user to access bookings stats.
   - [Deployment](#deployment)
   - [Credits](#credits)
   - [Acknowledgements](#acknowledgements)
+
+## Project Goals
+
+### User Goals
+
+- Ability to book a lesson.
+- Amend lesson date and type.
+- Cancel booked lesson.
+- Access information of all past bookings.
+
+### Site Owner Goals
+
+- Be able to keep track of all upcoming lessons.
+- Access information of all past bookings using filter.
