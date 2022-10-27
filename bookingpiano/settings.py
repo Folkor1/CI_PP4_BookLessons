@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'booking',
     'adminpanel',
+    'home',
     'django_filters',
 ]
 
