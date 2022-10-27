@@ -94,3 +94,15 @@ It's also possible for admin user to access bookings stats.
 17. As an admin I can view the admin panel.
 18. As an admin I can view the completed lessons page so that completed lessons search can be used.
 19. As an admin I can access the upcoming lessons page so that the upcoming lessons can be viewed.
+
+[Back to Table Of Contents](#table-of-contents)
+
+## Technical Design
+
+### Database
+
+- Database consists of 3 models - User, Bookings and about and was created using Django framework.
+
+<details><summary>Database</summary>
+
+![Database](static/images/str.JPG)
