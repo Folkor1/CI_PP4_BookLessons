@@ -4,7 +4,7 @@
 {% url 'account_signup' as account_signup %}
 {% url 'account_logout' as account_logout %}
 {% url 'bookings' as bookings %}
-{% url 'admin_panel' as admin_panel %}
+{% url 'adminpanel:admin_panel' as admin_panel %}
 {% url 'about' as about %}
 
 <!DOCTYPE html>
@@ -48,7 +48,7 @@
                 </li>
                 {% if user.is_superuser %}
                 <li class="nav-item">
-                  <a class="nav-link {% if request.path == admin_panel %} active {% endif %}" aria-current="page" href="{% url 'admin_panel' %}">ADMIN</a>
+                  <a class="nav-link {% if request.path == admin_panel %} active {% endif %}" aria-current="page" href="{% url 'adminpanel:admin_panel' %}">ADMIN</a>
                 </li>
                 {% endif %}
                 {% if user.is_authenticated %}

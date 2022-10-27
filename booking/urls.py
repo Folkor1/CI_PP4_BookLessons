@@ -17,7 +17,6 @@ urlpatterns = [
         views.PastBookingsView.as_view(),
         name="past_bookings"
         ),
-    path('admin_panel/', views.admin_panel, name="admin_panel"),
     path(
         'admin_past_bookings/',
         views.admin_past_bookings,
