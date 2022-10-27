@@ -27,3 +27,17 @@ def admin_panel(request):
         raise PermissionDenied
 
     return render(request, "admin_panel.html", context)
+
+
+def admin_past_bookings(request):
+    """
+    Render admin past bookings
+    """
+    booking = Bookings.objects.filter(status=False)
+    booking_filter = BookingFilter(request.GET, queryset=booking)
+    context = {
+        'booking_filter': booking_filter
+    }
+    if not request.user.is_superuser:
+        raise PermissionDenied
+    return render(request, "admin_past_bookings.html", context)

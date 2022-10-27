@@ -127,20 +127,6 @@ class PastBookingsView(generic.ListView):
     template_name = "past_bookings.html"
 
 
-def admin_past_bookings(request):
-    """
-    Render admin past bookings
-    """
-    booking = Bookings.objects.filter(status=False)
-    booking_filter = BookingFilter(request.GET, queryset=booking)
-    context = {
-        'booking_filter': booking_filter
-    }
-    if not request.user.is_superuser:
-        raise PermissionDenied
-    return render(request, "admin_past_bookings.html", context)
-
-
 def admin_upcoming_bookings(request):
     """
     Render admin upcoming bookings
