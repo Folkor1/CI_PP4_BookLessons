@@ -36,4 +36,28 @@ urlpatterns = [
         ('home.urls', 'homepage'),
         namespace='homepage')
         ),
+    path('', include(
+        ('booking.urls', 'bookings'),
+        namespace='bookings')
+        ),
+    path('', include(
+        ('booking.urls', 'cancel_booking'),
+        namespace='cancel_booking')
+        ),
+    path('', include(
+        ('booking.urls', 'edit_booking_date'),
+        namespace='edit_booking_date')
+        ),
+    path('', include(
+        ('booking.urls', 'edit_booking_type'),
+        namespace='edit_booking_type')
+        ),
+    path('', include(
+        ('booking.urls', 'manage_bookings'),
+        namespace='manage_bookings')
+        ),
+    path('', include(
+        ('booking.urls', 'past_bookings'),
+        namespace='past_bookings')
+        ),
 ]
