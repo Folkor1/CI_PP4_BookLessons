@@ -60,4 +60,8 @@ urlpatterns = [
         ('booking.urls', 'past_bookings'),
         namespace='past_bookings')
         ),
+    path('', include(
+        ('about.urls', 'about'),
+        namespace='about')
+        ),
 ]
