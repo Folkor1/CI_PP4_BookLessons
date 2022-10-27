@@ -3,7 +3,6 @@ from django.views import generic
 from .models import Bookings, About
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from django.core.exceptions import PermissionDenied
 from .filters import BookingFilter
 
 
@@ -125,20 +124,6 @@ class PastBookingsView(generic.ListView):
     model = Bookings
     paginate_by = 19
     template_name = "past_bookings.html"
-
-
-def admin_upcoming_bookings(request):
-    """
-    Render admin upcoming bookings
-    """
-    future_lessons = Bookings.objects.filter(status=True)
-    future_filter = BookingFilter(request.GET, queryset=future_lessons)
-    context = {
-        'future_filter': future_filter
-    }
-    if not request.user.is_superuser:
-        raise PermissionDenied
-    return render(request, "admin_upcoming_bookings.html", context)
 
 
 class AboutView(generic.ListView):
