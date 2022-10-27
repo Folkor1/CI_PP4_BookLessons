@@ -68,6 +68,29 @@ It's also possible for admin user to access bookings stats.
 - Easy way to book, amend and cancel booking.
 - Access records associated with the account.
 
-### User Manual
+## User Stories
 
-<details><summary>Click here to view instructions</summary>
+### Users
+
+1. As a user I can access the home page so that general site information can be viewed.
+2. As a user I can use navigation so that site pages can be viewed.
+3. As a user I can navigate to About page so that useful information can be viewed.
+4. As a user I can access Sign Up menu so that it's possible to create an account.
+5. As a user I can access the login menu so that it's possible to log in to the site.
+6. As a user I can view the social media links so that social media can be accessed.
+7. As a user I can see the lesson options so that piano or theory lesson can be selected.
+8. As a user I can see the lesson types so that online or offline type can be selected.
+9. As a user I can access the date and time picker so that time & date can be selected.
+10. As a user I can access bookings management page.
+11. As a user I can click Change date & time button so that new date & time can be selected.
+12. As a user I can use Change type menu so that lesson and its type can be changed.
+13. As a user I can click Cancel button so that booked lesson can be cancelled.
+14. As a user I can access upcoming bookings section so that upcoming bookings can be viewed.
+15. As a user I can access View my past bookings button so that past bookings can be viewed.
+
+### Site Owner
+
+16. As an admin I can access Admin button so that admin information can be viewed.
+17. As an admin I can view the admin panel.
+18. As an admin I can view the completed lessons page so that completed lessons search can be used.
+19. As an admin I can access the upcoming lessons page so that the upcoming lessons can be viewed.
