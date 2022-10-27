@@ -101,7 +101,9 @@ It's also possible for admin user to access bookings stats.
 
 ### Database
 
-- Database consists of 3 models - User, Bookings and about and was created using Django framework.
+- Database consists of 3 models - User, Bookings and About.
+- PostgreSQL is used as a database management system.
+- Models were built using Django framework. 
 
 <details><summary>Database</summary>
 
