@@ -1,5 +1,5 @@
 {% load static %}
-{% url 'homepage' as homepage %}
+{% url 'homepage:homepage' as homepage %}
 {% url 'account_login' as account_login %}
 {% url 'account_signup' as account_signup %}
 {% url 'account_logout' as account_logout %}
@@ -31,14 +31,14 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg" style="background-color: #1c1b1a;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'homepage' %}"><img src="{% static 'images/logo.JPG' %}" alt ='Logo Pic' id="navbar-logo"></a>
+            <a class="navbar-brand" href="{% url 'homepage:homepage' %}"><img src="{% static 'images/logo.JPG' %}" alt ='Logo Pic' id="navbar-logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link {% if request.path == homepage %} active {% endif %}" aria-current="page" href="{% url 'homepage' %}">HOME</a>
+                <a class="nav-link {% if request.path == homepage %} active {% endif %}" aria-current="page" href="{% url 'homepage:homepage' %}">HOME</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link {% if request.path == about %} active {% endif %}" aria-current="page" href="{% url 'about' %}">ABOUT</a>
