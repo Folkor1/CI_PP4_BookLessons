@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.views import generic
-from .models import Bookings, About
+from .models import Bookings
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .filters import BookingFilter
@@ -117,11 +117,3 @@ class PastBookingsView(generic.ListView):
     model = Bookings
     paginate_by = 19
     template_name = "past_bookings.html"
-
-
-class AboutView(generic.ListView):
-    """
-    Render about page
-    """
-    model = About
-    template_name = "about.html"
