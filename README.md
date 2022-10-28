@@ -718,4 +718,23 @@ The project was tested using 2 methods:
 
   </details>
 
+3. As a user I can navigate to About page so that useful information can be viewed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| About | Navigate to 'About' page | Elements are aligned properly | Works as expected |
+| About | Change resolution from 1600px to 320px | Elements are correctly aligned | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/about_full.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/about_responsive.JPG)
+
+  </details>
+
+
 </details>
