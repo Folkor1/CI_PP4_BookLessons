@@ -656,6 +656,8 @@ Contains:
 
 </details>
 
+[Back to Table Of Contents](#table-of-contents)
+
 ## Testing
 
 The project was tested using 2 methods:
@@ -1067,3 +1069,27 @@ The project was tested using 2 methods:
   </details>
 
 </details>
+
+### Automated Testing
+
+<details><summary>Unit testing</summary>
+
+1. Unit tests were written using 'unittest2' library.
+2. Tests are designed to Bookings model functions.
+3. assertEqual(), assertFalse() and assertTrue methods were used to make sure functions are executing properly.
+
+<details><summary>Unit test pass scenario</summary>
+
+![Pass](static/images/unittest_pass.JPG)
+
+</details>
+
+<details><summary>Unit test fail scenario</summary>
+
+![Fail](static/images/unittest_error.JPG)
+
+</details>
+
+</details>
+
+[Back to Table Of Contents](#table-of-contents)
