@@ -8,7 +8,7 @@
 
 ## About
 
-The website represents a booking system for piano and theory lessons with online or offline options. Features include booking, amending and cancelling booked lessons, as well as keeping record of all past lessons.
+The app represents a booking system for piano and theory lessons with online or offline options. Features include booking, amending and cancelling booked lessons, as well as keeping record of all past lessons.
 It's also possible for admin user to access bookings stats.
 
 ## Table of Contents
@@ -98,6 +98,25 @@ It's also possible for admin user to access bookings stats.
 [Back to Table Of Contents](#table-of-contents)
 
 ## Technical Design
+
+### Structure
+
+The app has the following structure: navigation bar on top, footer on bottom - visible accross all app pages, and the content/functionality are in between.
+
+Common app's pages:
+- Home: contact details, location, schedule, general information and link to Bookings page.
+- About: just some useful information about what to expect from lessons.
+- Bookings: option to select piano/theory lessons, option to select online/offline, select date and time. Upcoming bookings and Manage bookings link are available on this page.
+- Manage bookings: change date, change type or cancel lessons are available on this page, and also link to Past bookings section.
+- Past bookings: list of all past bookings with details (date, time, lesson, type).
+- Login: login input fields.
+- Sign Up: sign up input fields.
+- Pages 400, 403, 404, 500
+
+Admin only pages:
+- Admin panel: booking stats, links to completed and upcoming lessons:
+- Completed lessons: list of all completed lessons for all students, filter is used.
+- Upcoming lessons: list of all upcoming lessons for all students.
 
 ### Database
 
