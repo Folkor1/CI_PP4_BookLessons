@@ -1059,4 +1059,18 @@ The project was tested using 2 methods:
 
   </details>
 
+18. As an admin I can access the upcoming lessons page so that the upcoming lessons can be viewed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Admin panel | On the Admin panel page click Upcoming lessons | Navigated to Upcoming lessons page | Works as expected |
+| Admin panel | Navigate to admin Upcoming lessons | All lessons with future dates are displayed on the table | Works as expected |
+| Admin panel | Click Back to Admin panel | Navigated to Admin panel | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/adm_upc_all.JPG)
+
+  </details>
+
 </details>
