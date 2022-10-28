@@ -790,5 +790,24 @@ The project was tested using 2 methods:
 
   </details>
 
+6. As a user I can view the social media links so that social media can be accessed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Footer | Navigate through different pages of the app | Social media links are displayed in footer on all pages | Works as expected |
+| Footer | Click social links icons | Correct pages are opening in separate tabs | Works as expected |
+| Footer | Hover onto social links icons | Styling correctly changes on hover | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/footer_hover.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/footer_normal.JPG)
+
+  </details>
+
 
 </details>
