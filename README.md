@@ -544,3 +544,13 @@ Contains:
 ![404 screenshot](static/images/valid_404.JPG)
 
 </details>
+
+### CSS validation
+
+[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate CSS file.
+
+<details><summary>Style.css</summary>
+
+![Style.css screenshot](static/images/valid_css.JPG)
+
+</details>
