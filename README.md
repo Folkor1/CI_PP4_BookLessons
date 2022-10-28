@@ -213,6 +213,12 @@ Contains:
   - Link to Book a lesson
 - Covered by user story 1
 
+<details><summary>Show Home page screenshot</summary>
+
+![Home page screenshot](static/images/homepage.JPG)
+
+</details>
+
 ### Footer
 
 - Footer is fixed on the bottom and available accross all pages of the app.
@@ -466,3 +472,9 @@ Contains:
 ![Upcoming lessons screenshot](static/images/upcoming_lessons.JPG)
 
 </details>
+
+## Validation
+
+### HTML validation
+
+[W3C Markup Validation Service](https://validator.w3.org/) was used to validate HTML content of all app's pages.
