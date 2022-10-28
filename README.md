@@ -91,7 +91,7 @@ It's also possible for admin user to access bookings stats.
 ### Site Owner
 
 16. As an admin I can access Admin button so that admin information can be viewed.
-17. As an admin I can view the admin panel.
+17. As an admin I can view the admin panel so that completed/upcoming lessons option can be selected.
 18. As an admin I can view the completed lessons page so that completed lessons search can be used.
 19. As an admin I can access the upcoming lessons page so that the upcoming lessons can be viewed.
 
@@ -184,3 +184,20 @@ Contains:
 
 - [bootstrap-datepicker](https://bootstrap-datepicker.readthedocs.io/en/latest/index.html) - Justification: bootstrap-datepicker was used to implement a calendar so it's possible to pick booking date.
 - [django-filter](https://django-filter.readthedocs.io/en/stable/index.html) Justification: django-filter was used to filter queryset based on Bookings model fields.
+
+[Back to Table Of Contents](#table-of-contents)
+
+## Features
+
+### Navigation bar
+
+- Navbar takes fixed position at the top of the screen and available accross all pages of the app. 
+- Links are located on the right and logo is on the left.
+- Links include: Home, About, Bookings, Admin (for admin user only), Login/SignUp/Logout.
+- Covered by user stories 1-5, 16
+ 
+<details><summary>Show Navbar screenshot</summary>
+
+![Navbar screen screenshot](static/images/navbar.JPG)
+
+</details>
