@@ -14,7 +14,7 @@
 
     <div class="d-flex justify-content-center mt-4 text-center" id="admin-filter">
         <form method="GET" id="filter-form">
-            {{ booking_filter.form }}
+            {{ booking_filter.form.as_p }}
             <button type="submit" class="btn text-center border border-dark bg-light mt-3 mb-4 p-3 container-fluid">Search</button>
         </form>
     </div>
