@@ -816,9 +816,6 @@ The project was tested using 2 methods:
 | Bookings | Navigate to Bookings page | Piano and Theory options are displayed | Works as expected |
 | Bookings | Click Piano or Theory | Piano/Theory options disappear, Online/Offline options appear | Works as expected |
 | Bookings | Click Piano or Theory | Selected option displays above Online/Offline options | Works as expected |
-| Bookings | Select options and confirm the booking | Navigated Manage bookings page and the lessons is displayed in 'My upcoming bookings' | Works as expected |
-| Bookings | Book at least 1 lesson and navigate to Bookings page | My upcoming bookings is displayed above Manage bookings button | Works as expected |
-| Bookings | Cancel all bookings and navigate to Bookings page | 'You don't have upcoming bookings' message is displayed above Manage bookings button | Works as expected |
 
   <details><summary>Screenshot</summary>
 
@@ -828,11 +825,6 @@ The project was tested using 2 methods:
   <details><summary>Screenshot</summary>
 
   ![Screenshot](static/images/bookings_1option.JPG)
-
-  </details>
-  <details><summary>Screenshot</summary>
-
-  ![Screenshot](static/images/bookings_no_upcoming.JPG)
 
   </details>
 
@@ -972,6 +964,25 @@ The project was tested using 2 methods:
   <details><summary>Screenshot</summary>
 
   ![Screenshot](static/images/cancel_succ.JPG)
+
+  </details>
+
+14. As a user I can access upcoming bookings section so that upcoming bookings can be viewed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Bookings | Book at least 1 lesson and navigate to Bookings page | My upcoming bookings is displayed above Manage bookings button | Works as expected |
+| Bookings | Cancel all bookings and navigate to Bookings page | 'You don't have upcoming bookings' message is displayed above Manage bookings button | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/upc_booking.JPG)
+
+  </details>
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/bookings_no_upcoming.JPG)
 
   </details>
 
