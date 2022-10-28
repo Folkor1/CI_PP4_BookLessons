@@ -697,8 +697,6 @@ The project was tested using 2 methods:
 | Navbar | Click 'Bookings' | Navigated to 'Bookings' page | Works as expected |
 | Navbar | Click 'Sign Up' | Navigated to 'Sign Up' page | Works as expected |
 | Navbar | Click 'Login'  | Navigated to 'Login' page | Works as expected |
-| Navbar | Login as admin user | 'Admin' link in available | Works as expected |
-| Navbar | Login as non-admin user | 'Admin' link in not available | Works as expected |
 | Navbar | Click 'Logout' | Navigated to 'Logout' page | Works as expected |
 | Navbar | Navigate through navigation links | Active page is emphasized with frame | Works as expected |
 
@@ -710,11 +708,6 @@ The project was tested using 2 methods:
   <details><summary>Screenshot</summary>
 
   ![Screenshot](static/images/nav_logout.JPG)
-
-  </details>
-  <details><summary>Screenshot</summary>
-
-  ![Screenshot](static/images/nav_non_admin.JPG)
 
   </details>
 
