@@ -203,7 +203,7 @@ $(document).ready(function() {
 
     // Hide paginator
     if (document.location.pathname == "/past_bookings/") {
-        if($('.card-body').length < document.getElementById("count").value) {
+        if($('.card-body').length < document.getElementByClassName("count").value) {
             $('#pag').addClass("d-none");
         }
      }

@@ -46,7 +46,7 @@
             </span>
             {% for past in bookings_list %}
                 {% if past.student == request.user and past.status == False or past.status|length == 0 %}
-                    <input type="hidden" value="{{ forloop.counter }}" id="count">
+                    <input type="hidden" value="{{ forloop.counter }}" class="count">
                 {% endif %}
             {% endfor %}
         </div>
