@@ -1000,4 +1000,22 @@ The project was tested using 2 methods:
 
   </details>
 
+16. As an admin I can access Admin button so that admin information can be viewed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Admin panel | Login as admin user | Admin link is displayed in the Navbar | Works as expected |
+| Admin panel | Login as non-admin user | Admin link is not displayed in the Navbar | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/admin_button.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/no_admin_button.JPG)
+
+  </details>
+
 </details>
