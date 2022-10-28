@@ -956,4 +956,23 @@ The project was tested using 2 methods:
 
   </details>
 
+13. As a user I can click Cancel button so that booked lesson can be cancelled.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Manage bookings | Click Cancel button | Lessons disappears, confirmation menu with the correct data appears | Works as expected |
+| Manage bookings | Click Back on the confirmation menu | Navigated back to Manage bookings, no change made | Works as expected |
+| Manage bookings | Click Confirm on the confirmation menu | Navigated back to Manage bookings, lesson is no longer in the list and the success message displayed | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/cancel_back.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/cancel_succ.JPG)
+
+  </details>
+
 </details>
