@@ -888,10 +888,10 @@ The project was tested using 2 methods:
 
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| Manage booking | On Booking page click Manage bookings | Navigated to Manage bookings page | Works as expected |
-| Manage booking | Cancel all bookings | My upcoming bookings is changed to You currently don't have upcoming bookings | Works as expected |
-| Manage booking | Book a lesson | Correct lesson, lesson type, date and time are displayed | Works as expected |
-| Manage booking | Click Past bookings | Navigated to Past bookings page | Works as expected |
+| Manage bookings | On Booking page click Manage bookings | Navigated to Manage bookings page | Works as expected |
+| Manage bookings | Cancel all bookings | My upcoming bookings is changed to You currently don't have upcoming bookings | Works as expected |
+| Manage bookings | Book a lesson | Correct lesson, lesson type, date and time are displayed | Works as expected |
+| Manage bookings | Click Past bookings | Navigated to Past bookings page | Works as expected |
 
   <details><summary>Screenshot</summary>
 
@@ -901,6 +901,58 @@ The project was tested using 2 methods:
   <details><summary>Screenshot</summary>
 
   ![Screenshot](static/images/manage_no_lessons.JPG)
+
+  </details>
+
+11. As a user I can click Change date & time button so that new date & time can be selected.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Manage bookings | Click Change date button | Lessons disappears, date picker appears | Works as expected |
+| Manage bookings | Select date on the date picker | Time picker appears with no value by default | Works as expected |
+| Manage bookings | Select time in the time picker | Change button appears | Works as expected |
+| Manage bookings | Click Change button | Date and time pickers disappears, confirmation menu appears with the correct data | Works as expected |
+| Manage bookings | Click Back on confirmation  | Date and time picker are displayed | Works as expected |
+| Manage bookings | Select date and time and click Change button, then navigate back and select different date and time, then Change again | Date and time correctly updated | Works as expected |
+| Manage bookings | Select date and time and click Change button, then Confirm | Date and time correctly updated, success message is displayed | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/edit_datetime.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/edit_time.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/edit_change.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/edit_date_confirmation.JPG)
+
+  </details>
+
+12. As a user I can use Change type menu so that lesson and its type can be changed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Manage bookings | Click Change type button | Lessons disappears, confirmation menu with the correct option appears | Works as expected |
+| Manage bookings | Click Back on the confirmation menu | Navigated back to Manage bookings, no change made | Works as expected |
+| Manage bookings | Click Confirm on the confirmation menu | Navigated back to Manage bookings, change successfully made and the success message displayed | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/edit_type.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/edit_type_succ.JPG)
 
   </details>
 
