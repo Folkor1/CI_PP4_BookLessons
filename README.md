@@ -352,17 +352,38 @@ Contains:
 - Only admin user has access to it.
 - Results can be filtered by student username.
 - The following data is displayed on the table:
- - Number
- - Student
- - Lesson
- - Lesson Type
- - Date
- - Time
- - Status
+  - Number
+  - Student
+  - Lesson
+  - Lesson Type
+  - Date
+  - Time
+  - Status
 - Covered by user story 18
 
 <details><summary>Show Completed lessons screenshot</summary>
 
 ![Completed lessons screenshot](static/images/completed_lessons.JPG)
+
+</details>
+
+### Upcoming lessons
+
+- The page is accessible from Admin panel.
+- Only admin user has access to it.
+- All upcoming lessons are displayed as table.
+- The following data is displayed on the table:
+  - Number
+  - Student
+  - Lesson
+  - Lesson Type
+  - Date
+  - Time
+  - Status
+- Covered by user story 19
+
+<details><summary>Show Upcoming lessons screenshot</summary>
+
+![Upcoming lessons screenshot](static/images/upcoming_lessons.JPG)
 
 </details>
