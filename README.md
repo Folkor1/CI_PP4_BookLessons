@@ -736,5 +736,30 @@ The project was tested using 2 methods:
 
   </details>
 
+4. As a user I can access Sign Up menu so that it's possible to create an account.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Sign Up | Navigate to 'Sign Up' page | Elements are aligned properly | Works as expected |
+| Sign Up | Enter existing username | Validation error is displayed | Works as expected |
+| Sign Up | Leave empty fields and click 'Sign Up' | Validation errors are displayed | Works as expected |
+| Sign Up | Click 'sign in' link | Navigated to Login page | Works as expected |
+| Sign Up | Use correct data to create an account | Account is successfully created | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/signup_blank.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/signup_normal.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/signup_user_exists.JPG)
+
+  </details>
 
 </details>
