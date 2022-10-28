@@ -228,7 +228,7 @@ Contains:
 - Manage bookings link is placed in right upper corner.
 - Upcoming lessons are displayed above Manage bookings button, if there are no upcoming lessons the corresponding text is displayed.
 - Contact details are displayed in the left lower corner.
-- Covered by user stories 7,8,9
+- Covered by user stories 7, 8, 9, 14
 
 <details><summary>Show Piano/Theory screenshot</summary>
 
@@ -265,11 +265,68 @@ Contains:
 ![Confirm message screenshot](static/images/confirm_message.JPG)
 
 </details>
+<details><summary>Show No upcoming lessons screenshot</summary>
+
+![No upcoming lessons message screenshot](static/images/no_lessons.JPG)
+
+</details>
 <details><summary>Show Contacts screenshot</summary>
 
 ![Confirm message screenshot](static/images/contacts.JPG)
 
 </details>
 
+### Manage bookings
 
+- Manage bookings section is accessible from Bookings page.
+- For each booking there are 3 options:
+  - Change date
+  - Change type
+  - Cancel
+- For every action there is validation.
+- It's possible to navigate to Past bookings from this page.
+- Covered by user stories 10, 11, 12, 13
 
+<details><summary>Show Manage bookings screenshot</summary>
+
+![Manage bookings screenshot](static/images/manage_bookings.JPG)
+
+</details>
+<details><summary>Show Edit date screenshot</summary>
+
+![Edit date screenshot](static/images/edit_date.JPG)
+
+</details>
+<details><summary>Show Edit date confirm screenshot</summary>
+
+![Edit date confirm screenshot](static/images/change_date_confirm.JPG)
+
+</details>
+<details><summary>Show Edit type screenshot</summary>
+
+![Edit type screenshot](static/images/change_type_confirm.JPG)
+
+</details>
+<details><summary>Show Cancel screenshot</summary>
+
+![Cancel screenshot](static/images/cancel_confirm.JPG)
+
+</details>
+<details><summary>Show No upcoming bookings screenshot</summary>
+
+![No upcoming bookings screenshot](static/images/manage_no_bookings.JPG)
+
+</details>
+
+### Past bookings
+
+- Past bookings is accessible from Manage bookings page.
+- Lessons that has past date and associated with the user's account are displayed.
+- Paginator is available.
+- Covered by user story 15
+
+<details><summary>Show Past bookings screenshot</summary>
+
+![Past bookings screenshot](static/images/past_bookings.JPG)
+
+</details>
