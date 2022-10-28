@@ -175,4 +175,12 @@ Contains:
 - [jQuery](https://jquery.com/) as a JS library was used to manipulate the DOM
 - [PostgreSQL](https://www.postgresql.org/) as a database management system
 
+### Python Libraries
 
+- [unittest2](https://pypi.org/project/unittest2/) was used for testing Bookings model functions
+- [os](https://docs.python.org/3/library/os.html) as mapping object to represent environmental variables
+
+#### Third Party Libraries
+
+- [bootstrap-datepicker](https://bootstrap-datepicker.readthedocs.io/en/latest/index.html) - Justification: bootstrap-datepicker was used to implement a calendar so it's possible to pick booking date.
+- [django-filter](https://django-filter.readthedocs.io/en/stable/index.html) Justification: django-filter was used to filter queryset based on Bookings model fields.
