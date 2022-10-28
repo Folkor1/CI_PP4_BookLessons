@@ -819,7 +819,6 @@ The project was tested using 2 methods:
 | Bookings | Select options and confirm the booking | Navigated Manage bookings page and the lessons is displayed in 'My upcoming bookings' | Works as expected |
 | Bookings | Book at least 1 lesson and navigate to Bookings page | My upcoming bookings is displayed above Manage bookings button | Works as expected |
 | Bookings | Cancel all bookings and navigate to Bookings page | 'You don't have upcoming bookings' message is displayed above Manage bookings button | Works as expected |
-| Bookings | Click Manage bookings | Navigated to Manage bookings page | Works as expected |
 
   <details><summary>Screenshot</summary>
 
@@ -885,6 +884,24 @@ The project was tested using 2 methods:
 
   </details>
 
+10. As a user I can access bookings management page so that lessons can be amended or cancelled.
 
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Manage booking | On Booking page click Manage bookings | Navigated to Manage bookings page | Works as expected |
+| Manage booking | Cancel all bookings | My upcoming bookings is changed to You currently don't have upcoming bookings | Works as expected |
+| Manage booking | Book a lesson | Correct lesson, lesson type, date and time are displayed | Works as expected |
+| Manage booking | Click Past bookings | Navigated to Past bookings page | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/manage_lesson.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/manage_no_lessons.JPG)
+
+  </details>
 
 </details>
