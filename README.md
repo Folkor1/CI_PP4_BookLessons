@@ -150,3 +150,29 @@ Contains:
 - Title
 - Text
 - Image
+
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+- JavaScript
+- Python
+
+### Frameworks
+
+- Django
+
+### Libraries and Tools
+
+- [Bootstrap 5.1](https://getbootstrap.com/) was used as CSS framework
+- [Claudinary](https://cloudinary.com/) as static files management system
+- [dbdiagram.io](https://dbdiagram.io/) as database diagram design tool
+- [Font Awesome](https://fontawesome.com/) as a toolkit for icons
+- [GitHub](https://github.com/) as a repository for the project code
+- [Heroku](https://www.heroku.com/) to deploy the project
+- [jQuery](https://jquery.com/) as a JS library was used to manipulate the DOM
+- [PostgreSQL](https://www.postgresql.org/) as a database management system
+
+
