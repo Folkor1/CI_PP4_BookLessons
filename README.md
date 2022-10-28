@@ -81,7 +81,7 @@ It's also possible for admin user to access bookings stats.
 7. As a user I can see the lesson options so that piano or theory lesson can be selected.
 8. As a user I can see the lesson types so that online or offline type can be selected.
 9. As a user I can access the date and time picker so that time & date can be selected.
-10. As a user I can access bookings management page.
+10. As a user I can access bookings management page so that lessons can be amended or cancelled.
 11. As a user I can click Change date & time button so that new date & time can be selected.
 12. As a user I can use Change type menu so that lesson and its type can be changed.
 13. As a user I can click Cancel button so that booked lesson can be cancelled.
@@ -166,7 +166,7 @@ Contains:
 
 ### Libraries and Tools
 
-- [Bootstrap 5.1](https://getbootstrap.com/) was used as CSS framework
+- [Bootstrap 5.1](https://getbootstrap.com/) was used to style UI components
 - [Claudinary](https://cloudinary.com/) as static files management system
 - [dbdiagram.io](https://dbdiagram.io/) as database diagram design tool
 - [Font Awesome](https://fontawesome.com/) as a toolkit for icons
@@ -228,6 +228,7 @@ Contains:
 - Manage bookings link is placed in right upper corner.
 - Upcoming lessons are displayed above Manage bookings button, if there are no upcoming lessons the corresponding text is displayed.
 - Contact details are displayed in the left lower corner.
+- Covered by user stories 7,8,9
 
 <details><summary>Show Piano/Theory screenshot</summary>
 
@@ -244,3 +245,31 @@ Contains:
 ![Date picker screenshot](static/images/date_picker.JPG)
 
 </details>
+<details><summary>Show Time picker screenshot</summary>
+
+![Time picker screenshot](static/images/time_picker.JPG)
+
+</details>
+<details><summary>Show Book button screenshot</summary>
+
+![Book button screenshot](static/images/book_button.JPG)
+
+</details>
+<details><summary>Show My Upcoming Lessons screenshot</summary>
+
+![My Upcoming Lessons screenshot](static/images/my_upcoming_lessons.JPG)
+
+</details>
+<details><summary>Show Confirm message screenshot</summary>
+
+![Confirm message screenshot](static/images/confirm_message.JPG)
+
+</details>
+<details><summary>Show Contacts screenshot</summary>
+
+![Confirm message screenshot](static/images/contacts.JPG)
+
+</details>
+
+
+
