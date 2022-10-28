@@ -76,7 +76,7 @@ It's also possible for admin user to access bookings stats.
 2. As a user I can use navigation so that site pages can be viewed.
 3. As a user I can navigate to About page so that useful information can be viewed.
 4. As a user I can access Sign Up menu so that it's possible to create an account.
-5. As a user I can access the login menu so that it's possible to log in to the site.
+5. As a user I can access the login/logout menu so that it's possible to log in/log out from the site.
 6. As a user I can view the social media links so that social media can be accessed.
 7. As a user I can see the lesson options so that piano or theory lesson can be selected.
 8. As a user I can see the lesson types so that online or offline type can be selected.
@@ -234,6 +234,41 @@ Contains:
 <details><summary>Show Username already exists screenshot</summary>
 
 ![Username already exists screenshot](static/images/exists.JPG)
+
+</details>
+
+### Login
+
+- Login is located on Navbar and available only when not logged in.
+- It's possible to authorize into the system using created login and password.
+- The following fields are displayed on the form:
+  - Username
+  - Password
+- If username/password are incorrect the invalidation message is displayed.
+- 'Remember me' checkbox is available.
+- Once logged in the user is redirected to home page.
+- Covered by user story 5
+
+<details><summary>Show Login screenshot</summary>
+
+![Login screenshot](static/images/login.JPG)
+
+</details>
+<details><summary>Show Login error screenshot</summary>
+
+![Login error screenshot](static/images/login_error.JPG)
+
+</details>
+
+### Logout
+
+- Logout is located on Navbar and available only when logged in.
+- Once logged out the user is redirected to home page.
+- Covered by user story 5
+
+<details><summary>Show Logout screenshot</summary>
+
+![Logout screenshot](static/images/logout.JPG)
 
 </details>
 
