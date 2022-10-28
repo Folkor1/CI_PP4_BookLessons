@@ -568,3 +568,28 @@ Contains:
 ### Python validation
 
 [pycodstyle](https://pypi.org/project/pycodestyle/) extension was used to validate Python code.
+
+<details><summary>About</summary>
+
+  <details><summary>admin.py</summary>
+
+  ![admin.py screenshot](static/images/admin.py_about.JPG)
+
+  </details>
+  <details><summary>models.py</summary>
+
+  ![models.py screenshot](static/images/models.py_about.JPG)
+
+  </details>
+  <details><summary>urls.py</summary>
+
+  ![urls.py screenshot](static/images/urls.py_about.JPG)
+
+  </details>
+  <details><summary>views.py</summary>
+
+  ![views.py screenshot](static/images/views.py_about.JPG)
+
+  </details>
+
+</details>

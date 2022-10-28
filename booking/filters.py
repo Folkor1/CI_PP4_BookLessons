@@ -4,7 +4,7 @@ from .models import Bookings
 
 class BookingFilter(django_filters.FilterSet):
     """
-    Class student filter
+    Class for student filter
     """
 
     class Meta:
