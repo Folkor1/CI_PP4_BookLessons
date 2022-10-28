@@ -203,6 +203,40 @@ Contains:
 
 </details>
 
+### Footer
+
+- Footer is fixed on the bottom and available accross all pages of the app.
+- Links to social media are available in the footer.
+- Covered by user story 6
+
+<details><summary>Show Footer screenshot</summary>
+
+![Footer screenshot](static/images/footer.JPG)
+
+</details>
+
+### Sign Up
+
+- Sign Up is located on Navbar and available only when not logged in.
+- It's possible to create a new user.
+- The following fields are displayed on the form:
+  - Username
+  - E-mail (optional)
+  - Password (twice)
+- If username is not available the invalidation message is displayed.
+- Covered by user story 4
+
+<details><summary>Show Sign Up screenshot</summary>
+
+![Sign Up screenshot](static/images/signup.JPG)
+
+</details>
+<details><summary>Show Username already exists screenshot</summary>
+
+![Username already exists screenshot](static/images/exists.JPG)
+
+</details>
+
 ### About
 
 - About page contains general information about piano, theory and music overall.
