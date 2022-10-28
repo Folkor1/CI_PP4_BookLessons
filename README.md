@@ -1032,4 +1032,31 @@ The project was tested using 2 methods:
 
   </details>
 
+18. As an admin I can view the completed lessons page so that completed lessons search can be used.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Admin panel | On the Admin panel page click Completed lessons | Navigated to Completed lessons page | Works as expected |
+| Admin panel | Open Student dropdown | All users are displayed in the dropdown | Works as expected |
+| Admin panel | Select a user with no records and click Search | 'No records found' message is returned | Works as expected |
+| Admin panel | Select a user with some past lessons and click Search | A table is populated with the correct data | Works as expected |
+| Admin panel | Select ------- in the dropdown | No results are displayed | Works as expected |
+| Admin panel | Click Back to Admin panel | Navigated to Admin panel | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/adm_upc_none.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/adm_upc_nores.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/adm_upc_table.JPG)
+
+  </details>
+
 </details>
