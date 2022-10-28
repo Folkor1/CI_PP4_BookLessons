@@ -641,3 +641,40 @@ Contains:
   </details>
 
 </details>
+<details><summary>Home</summary>
+
+  <details><summary>urls.py</summary>
+
+  ![urls.py screenshot](static/images/urls.py_home.JPG)
+
+  </details>
+  <details><summary>views.py</summary>
+
+  ![views.py screenshot](static/images/views.py_home.JPG)
+
+  </details>
+
+</details>
+
+## Testing
+
+The project was tested using 2 methods:
+- Manual
+- Automated testing
+
+### Manual Testing
+
+<details><summary>User stories testing</summary>
+
+1. As a user I can access the home page so that general site information can be viewed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Home page | Load tha page | images and content are correctly aligned | Works as expected |
+| Home page | Click 'Location' link | Map opened in a separate window | Works as expected |
+| Home page | Click on map | Map opened in a separate window | Works as expected |
+| Home page | Hover onto 'Book a lesson' button | Styling is changed on hover | Works as expected |
+| Home page | Click 'Book a lesson' button | Redirected to Bookings page | Works as expected |
+| Home page | Change resolution from 1600px to 320px | Elements are correctly aligned | Works as expected |
+
+<details><summary>Screenshot 1</summary>
