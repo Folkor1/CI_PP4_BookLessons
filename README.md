@@ -670,11 +670,52 @@ The project was tested using 2 methods:
 
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| Home page | Load tha page | images and content are correctly aligned | Works as expected |
+| Home page | Load tha page | Images and content are correctly aligned | Works as expected |
 | Home page | Click 'Location' link | Map opened in a separate window | Works as expected |
 | Home page | Click on map | Map opened in a separate window | Works as expected |
 | Home page | Hover onto 'Book a lesson' button | Styling is changed on hover | Works as expected |
 | Home page | Click 'Book a lesson' button | Redirected to Bookings page | Works as expected |
 | Home page | Change resolution from 1600px to 320px | Elements are correctly aligned | Works as expected |
 
-<details><summary>Screenshot 1</summary>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/home_book.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/home_responsive.JPG)
+
+  </details>
+
+2. As a user I can use navigation so that site pages can be viewed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Navbar | Click app's logo | Navigated to home page | Works as expected |
+| Navbar | Click 'About' | Navigated to 'About' page | Works as expected |
+| Navbar | Click 'Bookings' | Navigated to 'Bookings' page | Works as expected |
+| Navbar | Click 'Sign Up' | Navigated to 'Sign Up' page | Works as expected |
+| Navbar | Click 'Login'  | Navigated to 'Login' page | Works as expected |
+| Navbar | Login as admin user | 'Admin' link in available | Works as expected |
+| Navbar | Login as non-admin user | 'Admin' link in not available | Works as expected |
+| Navbar | Click 'Logout' | Navigated to 'Logout' page | Works as expected |
+| Navbar | Navigate through navigation links | Active page is emphasized with frame | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/nav_admin.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/nav_logout.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/nav_non_admin.JPG)
+
+  </details>
+
+</details>
