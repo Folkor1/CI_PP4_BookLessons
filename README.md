@@ -986,4 +986,18 @@ The project was tested using 2 methods:
 
   </details>
 
+15. As a user I can access View my past bookings button so that past bookings can be viewed.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Past bookings | On Manage bookings page click View my past bookings | List of bookings is displayed with all booking data | Works as expected |
+| Past bookings | Add 14+ bookings with the past date in admin | Paginator is displayed and functioning correctly | Works as expected |
+| Past bookings | Click Back to manage bookings | Navigated to Manage bookings | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/past_bookings_normal.JPG)
+
+  </details>
+
 </details>
