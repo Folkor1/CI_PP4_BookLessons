@@ -809,5 +809,61 @@ The project was tested using 2 methods:
 
   </details>
 
+7. As a user I can see the lesson options so that piano or theory lesson can be selected.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Bookings | Navigate to Bookings page | Piano and Theory options are displayed | Works as expected |
+| Bookings | Click Piano or Theory | Piano/Theory options disappear, Online/Offline options appear | Works as expected |
+| Bookings | Click Piano or Theory | Selected option displays above Online/Offline options | Works as expected |
+| Bookings | Click Online or Offline | Online/Offline options disappear, date picker appear | Works as expected |
+| Bookings | Click Online or Offline | Selected option displays above the date picker | Works as expected |
+| Bookings | Select date on the date picker | Time picker dropdown menu appears with no value by default | Works as expected |
+| Bookings | Select time on the time picker | Book button appears | Works as expected |
+| Bookings | Click Book button | Confirmation message appears containing the correct information | Works as expected |
+| Bookings | Click Back on the confirmation message | Navigated back to date and time pickers | Works as expected |
+| Bookings | Click 'Back to lesson type selection' | Navigated to lesson type selection | Works as expected |
+| Bookings | Click 'Back to lesson selection' | Navigated to lesson selection | Works as expected |
+| Bookings | Select date and time and click Book button, then navigate back and select different date and time, then Book again | Date and time correctly updated | Works as expected |
+| Bookings | Select options and confirm the booking | Navigated Manage bookings page and the lessons is displayed in 'My upcoming bookings' | Works as expected |
+| Bookings | Book at least 1 lesson and navigate to Bookings page | My upcoming bookings is displayed above Manage bookings button | Works as expected |
+| Bookings | Cancel all bookings and navigate to Bookings page | 'You don't have upcoming bookings' message is displayed above Manage bookings button | Works as expected |
+| Bookings | Click Manage bookings | Navigated to Manage bookings page | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/bookings_normal.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/bookings_1option.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/bookings_2options.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/bookings_date.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/bookings_time.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/bookings_confirmation.JPG)
+
+  </details>
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/bookings_no_upcoming.JPG)
+
+  </details>
 
 </details>
