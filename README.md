@@ -194,10 +194,53 @@ Contains:
 - Navbar takes fixed position at the top of the screen and available accross all pages of the app. 
 - Links are located on the right and logo is on the left.
 - Links include: Home, About, Bookings, Admin (for admin user only), Login/SignUp/Logout.
+- Currently loggein username is displaying in right upper corner of the Navbar.
 - Covered by user stories 1-5, 16
  
 <details><summary>Show Navbar screenshot</summary>
 
-![Navbar screen screenshot](static/images/navbar.JPG)
+![Navbar screenshot](static/images/navbar.JPG)
+
+</details>
+
+### About
+
+- About page contains general information about piano, theory and music overall.
+- Link to About page is available on Navbar.
+- Covered by user story 3
+
+<details><summary>Show About screenshot</summary>
+
+![About screenshot](static/images/about.JPG)
+
+</details>
+
+### Bookings
+
+- Bookings page is accessible from the Navbar.
+- On this page it's possible to make a booking, the options will appear in the following sequence:
+  - Piano or Theory (displayed by default)
+  - Online or Offline
+  - Date picker
+  - Time picker
+  - Book button
+- Pressing Book button will lead to confirmation message with all selected options displayed in it.
+- Manage bookings link is placed in right upper corner.
+- Upcoming lessons are displayed above Manage bookings button, if there are no upcoming lessons the corresponding text is displayed.
+- Contact details are displayed in the left lower corner.
+
+<details><summary>Show Piano/Theory screenshot</summary>
+
+![Piano/Theory screenshot](static/images/piano_theory.JPG)
+
+</details>
+<details><summary>Show Online/Offline screenshot</summary>
+
+![Online/Offline screenshot](static/images/online_offline.JPG)
+
+</details>
+<details><summary>Show Date picker screenshot</summary>
+
+![Date picker screenshot](static/images/date_picker.JPG)
 
 </details>
