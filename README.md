@@ -330,3 +330,39 @@ Contains:
 ![Past bookings screenshot](static/images/past_bookings.JPG)
 
 </details>
+
+### Admin panel
+
+- Admin section is visible on Navbar only for admin user.
+- Booking stats are displayed on the admin panel page.
+- It's possible to navigate to 2 other sections from admin panel:
+ - Completed lessons
+ - Upcoming lessons
+- Covered by user stories 16, 17
+
+<details><summary>Show Admin panel screenshot</summary>
+
+![Admin panel screenshot](static/images/admin_panel.JPG)
+
+</details>
+
+### Completed lessons
+
+- The page is accessible from Admin panel.
+- Only admin user has access to it.
+- Results can be filtered by student username.
+- The following data is displayed on the table:
+ - Number
+ - Student
+ - Lesson
+ - Lesson Type
+ - Date
+ - Time
+ - Status
+- Covered by user story 18
+
+<details><summary>Show Completed lessons screenshot</summary>
+
+![Completed lessons screenshot](static/images/completed_lessons.JPG)
+
+</details>
