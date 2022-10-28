@@ -127,3 +127,26 @@ Admin only pages:
 <details><summary>Database</summary>
 
 ![Database](static/images/str.JPG)
+
+</details>
+
+### User model
+Contains user-related data: 
+- Nickname 
+- Email
+- Password
+
+### Bookings model
+This model contains: 
+- Lesson
+- Lesson type
+- Date
+- Time
+- Lesson status
+- User as a foreign key
+
+### About model
+Contains:
+- Title
+- Text
+- Image
