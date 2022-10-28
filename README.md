@@ -203,6 +203,16 @@ Contains:
 
 </details>
 
+### Home page
+
+- Home page contains the following sections:
+  - Contact information
+  - Location
+  - General information
+  - Working schedule
+  - Link to Book a lesson
+- Covered by user story 1
+
 ### Footer
 
 - Footer is fixed on the bottom and available accross all pages of the app.
