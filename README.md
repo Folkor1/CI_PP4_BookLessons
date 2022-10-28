@@ -1018,4 +1018,18 @@ The project was tested using 2 methods:
 
   </details>
 
+17. As an admin I can view the admin panel so that completed/upcoming lessons option can be selected.
+
+| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Admin panel | Login as admin user and navigate to Admin | Admin panel page is opened without error | Works as expected |
+| Admin panel | Login as non-admin user and navigate to Admin | Access denied message is displayed | Works as expected |
+| Admin panel | Navigate to Admin panel | Completed, Upcoming lessons and booking stats are displayed | Works as expected |
+
+  <details><summary>Screenshot</summary>
+
+  ![Screenshot](static/images/adm_panel.JPG)
+
+  </details>
+
 </details>
