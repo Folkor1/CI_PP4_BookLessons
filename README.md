@@ -547,10 +547,24 @@ Contains:
 
 ### CSS validation
 
-[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate CSS file.
+[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate Style.css file.
 
 <details><summary>Style.css</summary>
 
 ![Style.css screenshot](static/images/valid_css.JPG)
 
 </details>
+
+### JS validation
+
+[JSHint](https://jshint.com/) was used to validate Script.js file.
+
+<details><summary>Script.js</summary>
+
+![Script.js screenshot](static/images/valid_JS.JPG)
+
+</details>
+
+### Python validation
+
+[pycodstyle](https://pypi.org/project/pycodestyle/) extension was used to validate Python code.
