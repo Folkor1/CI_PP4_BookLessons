@@ -593,3 +593,51 @@ Contains:
   </details>
 
 </details>
+<details><summary>Adminpanel</summary>
+
+  <details><summary>urls.py</summary>
+
+  ![urls.py screenshot](static/images/urls.py_admin.JPG)
+
+  </details>
+  <details><summary>views.py</summary>
+
+  ![views.py screenshot](static/images/views.py_admin.JPG)
+
+  </details>
+
+</details>
+<details><summary>Bookings</summary>
+
+  <details><summary>admin.py</summary>
+
+  ![admin.py screenshot](static/images/admin.py_bookings.JPG)
+
+  </details>
+    <details><summary>filters.py</summary>
+
+  ![filters.py screenshot](static/images/filters.py_bookings.JPG)
+
+  </details>
+  <details><summary>models.py</summary>
+
+  ![models.py screenshot](static/images/models.py_bookings.JPG)
+
+  </details>
+    <details><summary>tests.py</summary>
+
+  ![tests.py screenshot](static/images/tests.py_bookings.JPG)
+
+  </details>
+  <details><summary>urls.py</summary>
+
+  ![urls.py screenshot](static/images/urls.py_bookings.JPG)
+
+  </details>
+  <details><summary>views.py</summary>
+
+  ![views.py screenshot](static/images/views.py_bookings.JPG)
+
+  </details>
+
+</details>
