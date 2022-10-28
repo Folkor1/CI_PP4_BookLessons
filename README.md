@@ -478,3 +478,69 @@ Contains:
 ### HTML validation
 
 [W3C Markup Validation Service](https://validator.w3.org/) was used to validate HTML content of all app's pages.
+
+<details><summary>Home</summary>
+
+![Home screenshot](static/images/valid_homepage.JPG)
+
+</details>
+<details><summary>About</summary>
+
+![About screenshot](static/images/valid_about.JPG)
+
+</details>
+<details><summary>Bookings</summary>
+
+![Bookings screenshot](static/images/valid_bookings.JPG)
+
+</details>
+<details><summary>Manage bookings</summary>
+
+![Manage bookings screenshot](static/images/valid_manage_bookings.JPG)
+
+</details>
+<details><summary>Past bookings</summary>
+
+![Past bookings screenshot](static/images/valid_past_bookings.JPG)
+
+</details>
+<details><summary>Admin panel</summary>
+
+![Admin panel screenshot](static/images/valid_adminpanel.JPG)
+
+</details>
+<details><summary>Admin completed bookings</summary>
+
+![Admin completed bookings screenshot](static/images/valid_admin_past_bookings.JPG)
+
+</details>
+<details><summary>Admin upcoming bookings</summary>
+
+![Admin upcoming bookings screenshot](static/images/valid_admin_upcoming_bookings.JPG)
+
+</details>
+<details><summary>Sign Up</summary>
+
+![Sign Up screenshot](static/images/valid_signup.JPG)
+
+</details>
+<details><summary>Login</summary>
+
+![Login screenshot](static/images/valid_login.JPG)
+
+</details>
+<details><summary>Logout</summary>
+
+![Logout screenshot](static/images/valid_signout.JPG)
+
+</details>
+<details><summary>500</summary>
+
+![500 screenshot](static/images/valid_500.JPG)
+
+</details>
+<details><summary>404</summary>
+
+![404 screenshot](static/images/valid_404.JPG)
+
+</details>
