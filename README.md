@@ -1093,3 +1093,12 @@ The project was tested using 2 methods:
 </details>
 
 [Back to Table Of Contents](#table-of-contents)
+
+## Bugs
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| JavaScript was returning long date and time by default (e.g. Saturday, 29-Oct-2022 00:11:14 UTC) | Added toLocaleDateString('en-CA') to convert the date to required format |
+| Bookings with past date were displaying in Upcoming bookings section | Add a function to change the status of past bookings each time Bookings page loads |
+| When selecting date and time for booking, then going back, and selecting new date and time, 2 dates and time were displaying at the same time | Add a function to empty date and time dictionary when going back |
+| 'My upcoming bookings' didn't change to 'You currently don't have upconing bookings' when there are no upcoming bookings for given user | Amend function to loop only through given user's records |
