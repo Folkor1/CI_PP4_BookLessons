@@ -1129,4 +1129,19 @@ The project was deployed using Heroku by the following steps:
 14. Enter the GitHub repository name in the search bar -> 'Connect'
 15. Click 'Deploy Branch' and wait for it to be built
 
+### Making a Local Clone
 
+1. Navigate to the GitHub repository 
+2. Click the 'Code' button (next to the green 'Gitpod' button)
+3. Copy the HTTPS link
+4. Navigate to Git Bash -> working directory
+5. Type 'git clone' and paste the URL received in step 3
+6. Press 'Enter
+
+[Back to Table Of Contents](#table-of-contents)
+
+## Credits
+
+- [Stack overflow](https://stackoverflow.com) was used to find answers related to the correct syntax use.
+- [Pixabay](https://pixabay.com/) was used to get images.
+- [designevo](https://www.designevo.com/) was used to create app's logo.
