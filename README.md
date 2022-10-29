@@ -1102,3 +1102,31 @@ The project was tested using 2 methods:
 | Bookings with past date were displaying in Upcoming bookings section | Add a function to change the status of past bookings each time Bookings page loads |
 | When selecting date and time for booking, then going back, and selecting new date and time, 2 dates and time were displaying at the same time | Add a function to empty date and time dictionary when going back |
 | 'My upcoming bookings' didn't change to 'You currently don't have upconing bookings' when there are no upcoming bookings for given user | Amend function to loop only through given user's records |
+
+## Deployment
+
+### Heroku
+
+The project was deployed using Heroku by the following steps:
+
+1. Install Django and gunicorn
+2. Install dj_database_url and psycopg2
+3. Add them to requirements file by entering: pip3 freeze --local > requirements.txt
+4. Create or log in to your account at heroku.com
+5. Click 'New' -> 'Create new app'
+6. Type in the app name (current project name is 'booking-app-pp4') -> select the region -> 'Create app'
+7. Navigate to 'Resourses' tab -> under Add-ons type 'Postgres' -> add Heroku Postgres
+8. Create Procfile (web: gunicorn bookingpiano.wsgi)
+9. Add Heroku to allowed hosts in Settings.py file (ALLOWED_HOSTS = ["booking-app-pp4.herokuapp.com", "localhost"])
+10. Set DEBUG to False in Settings.py file
+11. Navigate to Heroku -> 'Settings' tab -> Reveal Config Vars -> remove DISABLE_COLLECTSTATIC and ensure the following keys and their values are present:
+- CLOUDINARY_URL
+- DATABASE_URL
+- PORT
+- SECRET_KEY
+12. Navigate to 'Deploy' tab
+13. Select 'GitHub' in the 'Deployment method' area
+14. Enter the GitHub repository name in the search bar -> 'Connect'
+15. Click 'Deploy Branch' and wait for it to be built
+
+
