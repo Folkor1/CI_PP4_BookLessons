@@ -8,8 +8,8 @@
 
 ## About
 
-The app represents a booking system for piano and theory lessons with online or offline options. Features include booking, amending and cancelling booked lessons, as well as keeping record of all past lessons.
-It's also possible for admin user to access bookings stats.
+The app represents a booking system for piano and theory lessons with online or offline options. Features include booking, amending, and canceling booked lessons, as well as keeping a record of all past lessons.
+It's also possible for admin users to access bookings stats.
 
 ## Table of Contents
 
@@ -19,21 +19,21 @@ It's also possible for admin user to access bookings stats.
   - [User Experience](#user-experience)
     - [Target Audience](#target-audience)
     - [User Requirements and Expectations](#user-requirements-and-expectations)
-    - [User Manual](#user-manual)
   - [User Stories](#user-stories)
     - [Users](#users)
     - [Site Owner](#site-owner)
   - [Technical Design](#technical-design)
-    - [Flowchart](#flowchart)
+    - [Structure](#structure)
+    - [Database](#database)
   - [Technologies Used](#technologies-used)
     - [Languages](#languages)
-    - [Frameworks & Tools](#frameworks--tools)
-    - [Libraries](#libraries)
+    - [Frameworks](#frameworks)
+    - [Libraries and Tools](#libraries-and-tools)
   - [Features](#features)
   - [Validation](#validation)
   - [Testing](#testing)
     - [Manual Testing](#manual-testing)
-    - [Automation Testing](#automation-testing)
+    - [Automated Testing](#automated-testing)
   - [Bugs](#bugs)
   - [Deployment](#deployment)
   - [Credits](#credits)
@@ -51,7 +51,7 @@ It's also possible for admin user to access bookings stats.
 ### Site Owner Goals
 
 - Be able to keep track of all upcoming lessons.
-- Access information of all past bookings using filter.
+- Access information on all past bookings using filters.
 
 ## User Experience
 
@@ -65,7 +65,7 @@ It's also possible for admin user to access bookings stats.
 
 - Intuitive navigation.
 - Responsive design.
-- Easy way to book, amend and cancel booking.
+- Easy way to book, amend, and cancel booking.
 - Access records associated with the account.
 
 ## User Stories
@@ -78,13 +78,13 @@ It's also possible for admin user to access bookings stats.
 4. As a user I can access Sign Up menu so that it's possible to create an account.
 5. As a user I can access the login/logout menu so that it's possible to log in/log out from the site.
 6. As a user I can view the social media links so that social media can be accessed.
-7. As a user I can see the lesson options so that piano or theory lesson can be selected.
+7. As a user I can see the lesson options so that piano or theory lessons can be selected.
 8. As a user I can see the lesson types so that online or offline type can be selected.
 9. As a user I can access the date and time picker so that time & date can be selected.
-10. As a user I can access bookings management page so that lessons can be amended or cancelled.
+10. As a user I can access the bookings management page so that lessons can be amended or canceled.
 11. As a user I can click Change date & time button so that new date & time can be selected.
 12. As a user I can use Change type menu so that lesson and its type can be changed.
-13. As a user I can click Cancel button so that booked lesson can be cancelled.
+13. As a user I can click Cancel button so that booked lesson can be canceled.
 14. As a user I can access upcoming bookings section so that upcoming bookings can be viewed.
 15. As a user I can access View my past bookings button so that past bookings can be viewed.
 
@@ -101,12 +101,12 @@ It's also possible for admin user to access bookings stats.
 
 ### Structure
 
-The app has the following structure: navigation bar on top, footer on bottom - visible accross all app pages, and the content/functionality are in between.
+The app has the following structure: navigation bar on top, footer on bottom - visible across all app pages, and the content/functionality are in between.
 
 Common app's pages:
 - Home: contact details, location, schedule, general information and link to Bookings page.
 - About: just some useful information about what to expect from lessons.
-- Bookings: option to select piano/theory lessons, option to select online/offline, select date and time. Upcoming bookings and Manage bookings link are available on this page.
+- Bookings: option to select piano/theory lessons; option to select online/offline, select date and time. Upcoming bookings and Manage bookings link are available on this page.
 - Manage bookings: change date, change type or cancel lessons are available on this page, and also link to Past bookings section.
 - Past bookings: list of all past bookings with details (date, time, lesson, type).
 - Login: login input fields.
@@ -120,7 +120,7 @@ Admin only pages:
 
 ### Database
 
-- Database consists of 3 models - User, Bookings and About.
+- Database consists of 3 models - User, Bookings, and About.
 - PostgreSQL is used as a database management system.
 - Models were built using Django framework. 
 
@@ -182,7 +182,7 @@ Contains:
 
 #### Third Party Libraries
 
-- [bootstrap-datepicker](https://bootstrap-datepicker.readthedocs.io/en/latest/index.html) - Justification: bootstrap-datepicker was used to implement a calendar so it's possible to pick booking date.
+- [bootstrap-datepicker](https://bootstrap-datepicker.readthedocs.io/en/latest/index.html) - Justification: bootstrap-datepicker was used to implement a calendar, so it's possible to pick booking date.
 - [django-filter](https://django-filter.readthedocs.io/en/stable/index.html) Justification: django-filter was used to filter queryset based on Bookings model fields.
 
 [Back to Table Of Contents](#table-of-contents)
@@ -191,10 +191,10 @@ Contains:
 
 ### Navigation bar
 
-- Navbar takes fixed position at the top of the screen and available accross all pages of the app. 
+- Navbar takes a fixed position at the top of the screen and is available across all pages of the app. 
 - Links are located on the right and logo is on the left.
-- Links include: Home, About, Bookings, Admin (for admin user only), Login/SignUp/Logout.
-- Currently loggein username is displaying in right upper corner of the Navbar.
+- Links include: Home, About, Bookings, Admin (for admin users only), Login/SignUp/Logout.
+- Currently logged in username is displaying in right upper corner of the Navbar.
 - Covered by user stories 1-5, 16
  
 <details><summary>Show Navbar screenshot</summary>
@@ -221,7 +221,7 @@ Contains:
 
 ### Footer
 
-- Footer is fixed on the bottom and available accross all pages of the app.
+- Footer is fixed on the bottom and available across all pages of the app.
 - Links to social media are available in the footer.
 - Covered by user story 6
 
@@ -233,13 +233,13 @@ Contains:
 
 ### Sign Up
 
-- Sign Up is located on Navbar and available only when not logged in.
+- Sign Up is located on Navbar and is available only when not logged in.
 - It's possible to create a new user.
 - The following fields are displayed on the form:
   - Username
   - E-mail (optional)
   - Password (twice)
-- If username is not available the invalidation message is displayed.
+- If username is not available, the invalidation message is displayed.
 - Covered by user story 4
 
 <details><summary>Show Sign Up screenshot</summary>
@@ -255,12 +255,12 @@ Contains:
 
 ### Login
 
-- Login is located on Navbar and available only when not logged in.
-- It's possible to authorize into the system using created login and password.
+- Login is located on Navbar and is available only when not logged in.
+- It's possible to authorize into the system using a created login and password.
 - The following fields are displayed on the form:
   - Username
   - Password
-- If username/password are incorrect the invalidation message is displayed.
+- If username/password are incorrect, the invalidation message is displayed.
 - 'Remember me' checkbox is available.
 - Once logged in the user is redirected to home page.
 - Covered by user story 5
@@ -290,7 +290,7 @@ Contains:
 
 ### About
 
-- About page contains general information about piano, theory and music overall.
+- About page contains general information about piano, theory, and music overall.
 - Link to About page is available on Navbar.
 - Covered by user story 3
 
@@ -303,7 +303,7 @@ Contains:
 ### Bookings
 
 - Bookings page is accessible from the Navbar.
-- On this page it's possible to make a booking, the options will appear in the following sequence:
+- On this page it's possible to make a booking; the options will appear in the following sequence:
   - Piano or Theory (displayed by default)
   - Online or Offline
   - Date picker
@@ -311,7 +311,7 @@ Contains:
   - Book button
 - Pressing Book button will lead to confirmation message with all selected options displayed in it.
 - Manage bookings link is placed in right upper corner.
-- Upcoming lessons are displayed above Manage bookings button, if there are no upcoming lessons the corresponding text is displayed.
+- Upcoming lessons are displayed above Manage bookings button; if there are no upcoming lessons, the corresponding text is displayed.
 - Contact details are displayed in the left lower corner.
 - Covered by user stories 7, 8, 9, 14
 
@@ -406,7 +406,7 @@ Contains:
 ### Past bookings
 
 - Past bookings is accessible from Manage bookings page.
-- Lessons that has past date and associated with the user's account are displayed.
+- Lessons that have past date and associated with the user's account are displayed.
 - Paginator is available.
 - Covered by user story 15
 
@@ -418,7 +418,7 @@ Contains:
 
 ### Admin panel
 
-- Admin section is visible on Navbar only for admin user.
+- Admin section is visible on Navbar only for admin users.
 - Booking stats are displayed on the admin panel page.
 - It's possible to navigate to 2 other sections from admin panel:
  - Completed lessons
@@ -456,7 +456,7 @@ Contains:
 
 - The page is accessible from Admin panel.
 - Only admin user has access to it.
-- All upcoming lessons are displayed as table.
+- All upcoming lessons are displayed as a table.
 - The following data is displayed on the table:
   - Number
   - Student
@@ -672,9 +672,9 @@ The project was tested using 2 methods:
 
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| Home page | Load tha page | Images and content are correctly aligned | Works as expected |
-| Home page | Click 'Location' link | Map opened in a separate window | Works as expected |
-| Home page | Click on map | Map opened in a separate window | Works as expected |
+| Home page | Load the page | Images and content are correctly aligned | Works as expected |
+| Home page | Click 'Location' link | Map opens in a separate window | Works as expected |
+| Home page | Click on map | Map opens in a separate window | Works as expected |
 | Home page | Hover onto 'Book a lesson' button | Styling is changed on hover | Works as expected |
 | Home page | Click 'Book a lesson' button | Redirected to Bookings page | Works as expected |
 | Home page | Change resolution from 1600px to 320px | Elements are correctly aligned | Works as expected |
@@ -877,7 +877,7 @@ The project was tested using 2 methods:
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
 | Manage bookings | On Booking page click Manage bookings | Navigated to Manage bookings page | Works as expected |
 | Manage bookings | Cancel all bookings | My upcoming bookings is changed to You currently don't have upcoming bookings | Works as expected |
-| Manage bookings | Book a lesson | Correct lesson, lesson type, date and time are displayed | Works as expected |
+| Manage bookings | Book a lesson | Correct lesson, lesson type, date and time displayed | Works as expected |
 | Manage bookings | Click Past bookings | Navigated to Past bookings page | Works as expected |
 
   <details><summary>Screenshot</summary>
@@ -895,11 +895,11 @@ The project was tested using 2 methods:
 
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| Manage bookings | Click Change date button | Lessons disappears, date picker appears | Works as expected |
+| Manage bookings | Click Change date button | Lessons disappear, date picker appears | Works as expected |
 | Manage bookings | Select date on the date picker | Time picker appears with no value by default | Works as expected |
 | Manage bookings | Select time in the time picker | Change button appears | Works as expected |
-| Manage bookings | Click Change button | Date and time pickers disappears, confirmation menu appears with the correct data | Works as expected |
-| Manage bookings | Click Back on confirmation  | Date and time picker are displayed | Works as expected |
+| Manage bookings | Click Change button | Date and time pickers disappear, confirmation menu appears with the correct data | Works as expected |
+| Manage bookings | Click Back on confirmation  | Date and time picker displayed | Works as expected |
 | Manage bookings | Select date and time and click Change button, then navigate back and select different date and time, then Change again | Date and time correctly updated | Works as expected |
 | Manage bookings | Select date and time and click Change button, then Confirm | Date and time correctly updated, success message is displayed | Works as expected |
 
@@ -928,7 +928,7 @@ The project was tested using 2 methods:
 
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| Manage bookings | Click Change type button | Lessons disappears, confirmation menu with the correct option appears | Works as expected |
+| Manage bookings | Click Change type button | Lessons disappear, confirmation menu with the correct option appears | Works as expected |
 | Manage bookings | Click Back on the confirmation menu | Navigated back to Manage bookings, no change made | Works as expected |
 | Manage bookings | Click Confirm on the confirmation menu | Navigated back to Manage bookings, change successfully made and the success message displayed | Works as expected |
 
@@ -947,7 +947,7 @@ The project was tested using 2 methods:
 
 | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| Manage bookings | Click Cancel button | Lessons disappears, confirmation menu with the correct data appears | Works as expected |
+| Manage bookings | Click Cancel button | Lessons disappear, confirmation menu with the correct data appears | Works as expected |
 | Manage bookings | Click Back on the confirmation menu | Navigated back to Manage bookings, no change made | Works as expected |
 | Manage bookings | Click Confirm on the confirmation menu | Navigated back to Manage bookings, lesson is no longer in the list and the success message displayed | Works as expected |
 
@@ -1075,7 +1075,7 @@ The project was tested using 2 methods:
 <details><summary>Unit testing</summary>
 
 1. Unit tests were written using 'unittest2' library.
-2. Tests are designed to Bookings model functions.
+2. Tests are designed for Bookings model functions.
 3. assertEqual(), assertFalse() and assertTrue methods were used to make sure functions are executing properly.
 
 <details><summary>Unit test pass scenario</summary>
@@ -1098,10 +1098,10 @@ The project was tested using 2 methods:
 
 | **Bug** | **Fix** |
 | ------- | ------- |
-| JavaScript was returning long date and time by default (e.g. Saturday, 29-Oct-2022 00:11:14 UTC) | Added toLocaleDateString('en-CA') to convert the date to required format |
-| Bookings with past date were displaying in Upcoming bookings section | Add a function to change the status of past bookings each time Bookings page loads |
-| When selecting date and time for booking, then going back, and selecting new date and time, 2 dates and time were displaying at the same time | Add a function to empty date and time dictionary when going back |
-| 'My upcoming bookings' didn't change to 'You currently don't have upconing bookings' when there are no upcoming bookings for given user | Amend function to loop only through given user's records |
+| JavaScript was returns long date and time by default (e.g. Saturday, 29-Oct-2022 00:11:14 UTC) | Added toLocaleDateString('en-CA') to convert the date to required format |
+| Bookings with past date displayed in Upcoming bookings section | Add a function to change the status of past bookings each time Bookings page loads |
+| When selecting date and time for booking, then going back, and selecting new date and time, 2 dates and time are displaying at the same time | Add a function to empty date and time dictionary when going back |
+| 'My upcoming bookings' didn't change to 'You currently don't have upcoming bookings' when there are no upcoming bookings for given user | Amend function to loop only through given user's records |
 
 ## Deployment
 
