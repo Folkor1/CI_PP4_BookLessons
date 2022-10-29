@@ -1145,3 +1145,7 @@ The project was deployed using Heroku by the following steps:
 - [Stack overflow](https://stackoverflow.com) was used to find answers related to the correct syntax use.
 - [Pixabay](https://pixabay.com/) was used to get images.
 - [designevo](https://www.designevo.com/) was used to create app's logo.
+
+## Acknowledgements
+A special thanks to CI Tutors who helped me to pass various roadblockers during this project.
+Big thanks to my mentor Mo for guidance and support.
